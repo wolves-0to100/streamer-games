@@ -1,0 +1,5 @@
+Sitemap: https://0to100.ink/sitemap.xml
+
+User-Agent: *
+Disallow: /Impressum
+Disallow: /Datenschutz
