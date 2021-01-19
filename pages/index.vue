@@ -1,10 +1,11 @@
 <template>
-	<div class="container">
-		<div>
-			<h1>Twitch Games</h1>
+	<div class="page">
+		<main>
+			<h1>Twitch Games 🎮</h1>
 			<p>Wilkommen bei Twitch Games. Hier hast du die Möglichkeit mit deinem Chat Spiele zu spielen.</p>
 
 			<div class="channelInputWrapper">
+				<label for="channelName">Gib hier deinen Kanalnamen ein:</label>
 				<input
 					id="channelName"
 					v-model="channelName"
@@ -12,26 +13,44 @@
 					placeholder="0to100ink"
 					@keydown.enter="saveChannel"
 				/>
-				<label for="channelName">Twitch Channel Name</label>
+				<button @click="saveChannel">Zu den Spielen</button>
 			</div>
-		</div>
+		</main>
 	</div>
 </template>
 
 <script>
-export default {};
+export default {
+	name: 'Homepage',
+	data() {
+		return {
+			channelName: '',
+		};
+	},
+	methods: {
+		saveChannel() {
+			if (this.channelName) {
+				this.$store.commit('setChannelName', this.channelName);
+				this.$router.push('/games');
+			}
+		},
+	},
+};
 </script>
 
-<style>
-.container {
-	margin: 0 auto;
-	min-height: 100vh;
+<style lang="scss" scoped>
+.page {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
+main {
+	max-width: 600px;
+}
 .channelInputWrapper {
 	margin: 2em 0;
+	label {
+		margin-bottom: 0.2em;
+	}
 }
 </style>

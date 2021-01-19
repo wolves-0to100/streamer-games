@@ -45,6 +45,13 @@ body {
 	}
 	input {
 		color: #e0e0e0;
+		background-color: #2c3136;
+		border: 1px solid rgba(0, 0, 0, 0.4);
+	}
+	button {
+		color: #e0e0e0;
+		background-color: #434a54;
+		border: 1px solid rgba(0, 0, 0, 0.4);
 	}
 }
 
@@ -60,23 +67,39 @@ a {
 
 input {
 	font-family: 'Inter', sans-serif;
-	font-weight: 800;
-	font-size: 2em;
+	font-size: 1.1em;
+	width: 400px;
 	outline: none;
-	border: none;
+	border: 1px solid rgba(255, 255, 255, 0.4);
 	color: #1a1a1a;
-	background: transparent;
+	background-color: rgb(235, 235, 235);
+	padding: 10px 15px;
+	border-radius: 4px;
+	@media (max-width: 600px) {
+		width: 100%;
+		font-size: 1em;
+	}
 }
 
 label {
 	display: block;
+	font-size: 0.9em;
 }
 
+// TODO: Update button and input for light mode
+
 button {
+	font-weight: 700;
 	cursor: pointer;
 	border: none;
-	background-color: transparent;
+	color: #1a1a1a;
+	background-color: rgb(202, 202, 202);
+	padding: 12px 24px;
+	font-size: 1.1em;
+	line-height: 1em;
 	outline: none;
+	border-radius: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 hr {
