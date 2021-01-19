@@ -1,6 +1,13 @@
 export const state = () => ({
 	channelName: '',
 	players: [],
+	games: [
+		{
+			name: 'Flaggen Quiz',
+			description: 'Erkenne die Länder anhand ihrer Falgge.',
+			maxPlayer: null,
+		},
+	],
 });
 
 export const mutations = {
