@@ -4,6 +4,7 @@ export const state = () => ({
 	games: [
 		{
 			name: 'Flaggen Quiz',
+			slug: 'flaggen-quiz',
 			description: 'Erkenne die Länder anhand ihrer Falgge.',
 			maxPlayer: null,
 		},

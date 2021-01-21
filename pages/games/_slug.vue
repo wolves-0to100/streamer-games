@@ -1,14 +1,25 @@
 <template>
 	<div class="page">
 		<h1>Game</h1>
-		<h2>{{ $route.params.slug }}</h2>
-		<p>Hier ist das ausgewählte Spiel</p>
+		<component :is="currentGame"></component>
 	</div>
 </template>
 
 <script>
+import FlaggenQuiz from '~/components/games/FlaggenQuiz.vue';
+
 export default {
 	name: 'Game',
+	computed: {
+		currentGame() {
+			switch (this.$route.params.slug) {
+				case 'flaggen-quiz':
+					return FlaggenQuiz;
+				default:
+					return FlaggenQuiz;
+			}
+		},
+	},
 };
 </script>
 
