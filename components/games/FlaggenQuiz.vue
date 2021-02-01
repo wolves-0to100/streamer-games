@@ -1,12 +1,12 @@
 <template>
 	<div>
-		<h2>Flaggen Quiz</h2>
+		<h1>Flaggen Quiz</h1>
 		<div v-if="currentCountry" class="game">
-			<div>
-				<p v-if="soulutionsShown">{{ currentCountry.name }} ({{ currentCountry.de }})</p>
-				<p v-else>?</p>
-				<h4>Country</h4>
-			</div>
+			<h2>
+				<span>Ländername: </span>
+				<span v-if="soulutionsShown">{{ currentCountry.name }} ({{ currentCountry.de }})</span>
+				<span v-else>?</span>
+			</h2>
 
 			<div class="imageWrapper">
 				<img :src="require('~/assets/games/flaggen-quiz/flags/' + currentCountry.code + '.svg')" />
@@ -15,28 +15,9 @@
 			<div class="flex">
 				<p>T-00:{{ doubleDigitCountdown }}</p>
 
-				<div v-if="!stop" class="button" @click="stopGame">
-					<h4>Stop</h4>
-				</div>
-				<div v-else-if="!interval" class="button" @click="$router.push('/Join')">
-					<h4>Neues Spiel</h4>
-				</div>
+				<button v-if="!stop" class="button" @click="stopGame">Stop</button>
+				<button v-else-if="!interval" class="button" @click="$router.push('/Join')">Neues Spiel</button>
 			</div>
-		</div>
-		<div class="sidepanel">
-			<p>
-				<b>{{ players.length }}</b>
-			</p>
-			<p>Players</p>
-			<hr />
-			<ul>
-				<li v-for="player in playersByScore" :key="player.username">
-					<p>
-						<b>{{ player.score }}</b>
-					</p>
-					<p>{{ player.displayName }}</p>
-				</li>
-			</ul>
 		</div>
 	</div>
 </template>
@@ -1394,4 +1375,17 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+h1 {
+	margin: 0 0 0.8em;
+}
+
+.imageWrapper {
+	margin: 1em 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+</style>

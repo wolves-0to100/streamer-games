@@ -1,6 +1,5 @@
 <template>
 	<div class="page">
-		<h1>Game</h1>
 		<component :is="currentGame"></component>
 	</div>
 </template>
@@ -10,6 +9,7 @@ import FlaggenQuiz from '~/components/games/FlaggenQuiz.vue';
 
 export default {
 	name: 'Game',
+	layout: 'game-layout',
 	computed: {
 		currentGame() {
 			switch (this.$route.params.slug) {
