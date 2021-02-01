@@ -18,6 +18,9 @@ export const mutations = {
 	setPlayers(state, players) {
 		state.players = players;
 	},
+	addPlayer(state, player) {
+		state.players.push(player);
+	},
 	updateScore(state, { points, username }) {
 		const player = state.players.find((u) => u.username === username);
 		if (player) player.score += points;

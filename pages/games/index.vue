@@ -16,6 +16,7 @@ import CardItem from '~/components/general/CardItem.vue';
 
 export default {
 	name: 'Games',
+	layout: 'game-layout',
 	components: { CardItem },
 	computed: {
 		...mapState(['games']),

@@ -1,8 +1,19 @@
 <template>
 	<div>
+		<page-header></page-header>
 		<Nuxt />
 	</div>
 </template>
+
+<script>
+import PageHeader from '~/components/general/PageHeader';
+
+export default {
+	components: {
+		PageHeader,
+	},
+};
+</script>
 
 <style lang="scss">
 .page {
