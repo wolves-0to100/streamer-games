@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="gameContainer">
 		<h1>Flaggen Quiz</h1>
 		<div v-if="currentCountry" class="game">
 			<h2>
@@ -12,12 +12,7 @@
 				<img :src="require('~/assets/games/flaggen-quiz/flags/' + currentCountry.code + '.svg')" />
 			</div>
 
-			<div class="flex">
-				<p>T-00:{{ doubleDigitCountdown }}</p>
-
-				<button v-if="!stop" class="button" @click="stopGame">Stop</button>
-				<button v-else-if="!interval" class="button" @click="$router.push('/Join')">Neues Spiel</button>
-			</div>
+			<p>T-00:{{ doubleDigitCountdown }}</p>
 		</div>
 	</div>
 </template>
@@ -28,6 +23,12 @@ import tmi from 'tmi.js';
 
 export default {
 	name: 'FlaggenQuiz',
+	props: {
+		isStarted: {
+			type: Boolean,
+			default: false,
+		},
+	},
 	data() {
 		return {
 			soulutionsShown: false,
@@ -35,7 +36,6 @@ export default {
 			currentCountry: null,
 			countdown: 16,
 			interval: null,
-			stop: false,
 			countries: [
 				{
 					name: 'Afghanistan',
@@ -1314,11 +1314,18 @@ export default {
 			return this.countdown.toString().padStart(2, '0');
 		},
 	},
+	watch: {
+		isStarted() {
+			if (this.isStarted) {
+				this.soulutionsShown = false;
+				this.currentCountry = this.leftCountries.pop();
+				this.countdown = 16;
+				this.startCountdown();
+			}
+		},
+	},
 	mounted() {
 		this.leftCountries = this.shuffleArray([...this.countries]);
-		this.currentCountry = this.leftCountries.pop();
-		this.startCountdown();
-		if (!this.channelName) this.$router.push('/');
 		const client = new tmi.Client({
 			connection: {
 				secure: true,
@@ -1352,7 +1359,7 @@ export default {
 				this.soulutionsShown = true;
 				this.countdown = 10;
 				this.startCountdown();
-			} else if (!this.stop) {
+			} else if (this.isStarted) {
 				this.soulutionsShown = false;
 				this.currentCountry = this.leftCountries.pop();
 				this.countdown = 16;
@@ -1360,13 +1367,11 @@ export default {
 			}
 		},
 		startCountdown() {
+			if (!this.channelName) this.$router.push('/');
 			this.interval = setInterval(() => {
 				this.countdown--;
 				if (this.countdown === 0) this.stopCountdown();
 			}, 1000);
-		},
-		stopGame() {
-			this.stop = true;
 		},
 		shuffleArray(arr) {
 			return arr.sort(() => Math.random() - 0.5);
@@ -1376,16 +1381,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.gameContainer {
+	width: 100%;
+}
 h1 {
 	margin: 0 0 0.8em;
 }
 
 .imageWrapper {
+	width: 100%;
 	margin: 1em 0;
 }
 
 img {
 	display: block;
 	width: 100%;
+	max-width: 800px;
 }
 </style>

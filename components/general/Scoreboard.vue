@@ -1,9 +1,12 @@
 <template>
 	<CardItem class="scoreboard">
 		<h2>Scoreboard</h2>
-		<p v-for="player in players" :key="player.username" class="player">
-			{{ player.displayName }} <span>{{ player.score }}</span>
-		</p>
+		<div class="players">
+			<p v-for="player in players.slice(0, 14)" :key="player.username" class="player">
+				{{ player.displayName }} <span>{{ player.score }}</span>
+			</p>
+		</div>
+		<p class="info">Um mitzuspielen tippe <b>!join</b> in den Chat.</p>
 	</CardItem>
 </template>
 
@@ -30,5 +33,14 @@ export default {
 .player {
 	display: flex;
 	justify-content: space-between;
+	margin: 0.4em 0;
+}
+
+.players {
+	margin: 1em 0;
+}
+
+.info {
+	margin-top: 1em;
 }
 </style>

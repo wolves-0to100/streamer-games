@@ -1,21 +1,19 @@
 <template>
 	<div>
 		<page-header></page-header>
-		<div class="container">
-			<Nuxt />
-			<Scoreboard />
-		</div>
+		<Nuxt />
 	</div>
 </template>
 
 <script>
 import tmi from 'tmi.js';
 import { mapState } from 'vuex';
-import Scoreboard from '~/components/general/Scoreboard.vue';
+import PageHeader from '~/components/general/PageHeader';
 
 export default {
-	name: 'GameLayout',
-	components: { Scoreboard },
+	components: {
+		PageHeader,
+	},
 	computed: {
 		...mapState(['channelName', 'players']),
 	},
@@ -55,20 +53,5 @@ export default {
 	@media (min-width: 1600px) {
 		padding: 100px 160px;
 	}
-}
-
-.container {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	gap: 12px;
-	padding: 20px 80px;
-	margin: 0 auto;
-	max-width: 1800px;
-}
-
-.scoreboard {
-	position: sticky;
-	top: 0;
 }
 </style>

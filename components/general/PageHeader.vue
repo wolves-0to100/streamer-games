@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss">
-.dark-mode header {
+.dark-mode #header {
 	background: rgba(26, 26, 26, 0.6);
 }
 

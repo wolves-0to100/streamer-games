@@ -14,12 +14,13 @@
 
 <script>
 import { mapState } from 'vuex';
+
 import CardItem from '~/components/general/CardItem.vue';
 
 export default {
 	name: 'Games',
-	layout: 'game-layout',
 	components: { CardItem },
+	layout: 'game-layout',
 	computed: {
 		...mapState(['games']),
 	},
