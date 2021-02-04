@@ -1,4 +1,18 @@
-# twitchgames
+# Streamer Games
+
+Streamer Games ist eine Webseite, welche es dir erlaubt mit deinem Twitch Chat Spiele zu spielen.
+
+[Webseite](https://games.0to100.ink)
+
+Das Projekt haben wir live auf Twitch gebaut: [0to100ink](https://twitch.tv/0to100ink)
+
+Für neue Spielvorschläge bin ich immer offen. Schreibe mit einfach auf Twitter, Instagram oder öffne ein Issue.
+
+Falls du selber ein Spiel entwicklen möchtest:
+
+-   Kopiere dir das Example Game (In components/games)
+-   Entwickle dein Spiel
+-   Füge dein Spiel zum games.json hinzu (In assets/games/games.json)
 
 ## Build Setup
 
