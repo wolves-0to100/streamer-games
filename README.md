@@ -14,6 +14,8 @@ Falls du selber ein Spiel entwicklen möchtest:
 -   Entwickle dein Spiel
 -   Füge dein Spiel zum games.json hinzu (In assets/games/games.json)
 
+Mehr Infos auf: [0to100](https://0to100.ink)
+
 ## Build Setup
 
 ```bash
