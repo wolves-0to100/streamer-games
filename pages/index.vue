@@ -1,63 +1,56 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">twitchgames</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+	<div class="page">
+		<main>
+			<h1>Streamer Games 🎮</h1>
+			<p>Wilkommen bei Streamer Games. Hier hast du die Möglichkeit mit deinem Twitch Chat Spiele zu spielen.</p>
+
+			<div class="channelInputWrapper">
+				<label for="channelName">Gib hier deinen Kanalnamen ein:</label>
+				<input
+					id="channelName"
+					v-model="channelName"
+					class="input"
+					placeholder="0to100ink"
+					@keydown.enter="saveChannel"
+				/>
+				<button @click="saveChannel">Zu den Spielen</button>
+			</div>
+		</main>
+	</div>
 </template>
 
 <script>
-export default {}
+export default {
+	name: 'Homepage',
+	data() {
+		return {
+			channelName: '',
+		};
+	},
+	methods: {
+		saveChannel() {
+			if (this.channelName) {
+				this.$store.commit('setChannelName', this.channelName);
+				this.$router.push('/games');
+			}
+		},
+	},
+};
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss" scoped>
+.page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+main {
+	max-width: 600px;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.channelInputWrapper {
+	margin: 2em 0;
+	label {
+		margin-bottom: 0.2em;
+	}
 }
 </style>
