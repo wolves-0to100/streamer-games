@@ -43,15 +43,14 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page {
 	width: 100%;
 	margin: 0 auto;
-	padding: 100px 10%;
-	min-height: 100vh;
+	padding: 60px 10%;
 	max-width: 1080px;
 	@media (min-width: 1600px) {
-		padding: 100px 160px;
+		padding: 60px 160px;
 	}
 }
 </style>

@@ -1,25 +1,30 @@
 <template>
 	<div class="page">
-		<h1>Games</h1>
-		<p>Hier kommt die Spiele auswahl hin.</p>
-		<div class="games">
-			<CardItem v-for="game in games" :key="game.name" class="game" @click="selectGame(game)">
-				<h2>{{ game.name }}</h2>
-				<p>{{ game.description }}</p>
-				<p>Maximale Spieler: {{ game.maxPlayers || 'kein Limit' }}</p>
-			</CardItem>
-		</div>
+		<main>
+			<h1>Spiele</h1>
+			<p class="description">
+				Hier hast du die Auswahl von verschiednen Spielen, welche du mit deinem Twitch Chat spielen kannst.
+			</p>
+			<div class="games">
+				<game-card v-for="game in games" :key="game.name" :game="game" @click="selectGame(game)" />
+			</div>
+		</main>
+		<aside>
+			<scoreboard />
+			<button @click="resetScore">Reset</button>
+		</aside>
 	</div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
 
-import CardItem from '~/components/general/CardItem.vue';
+import GameCard from '~/components/general/GameCard.vue';
+import Scoreboard from '~/components/general/Scoreboard';
 
 export default {
 	name: 'Games',
-	components: { CardItem },
+	components: { Scoreboard, GameCard },
 	layout: 'game-layout',
 	computed: {
 		...mapState(['games']),
@@ -28,15 +33,45 @@ export default {
 		selectGame(game) {
 			this.$router.push('/games/' + game.slug);
 		},
+		resetScore() {
+			this.$store.commit('resetScore');
+		},
 	},
 };
 </script>
 
 <style lang="scss" scoped>
+.page {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 60px 80px;
+	margin: 0 auto;
+	max-width: 1800px;
+}
+
+main {
+	width: 100%;
+	.description {
+		margin: 1em 0;
+		max-width: 400px;
+	}
+}
+
 .games {
 	margin: 20px 0;
 	display: grid;
 	grid-gap: 12px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+aside {
+	position: sticky;
+	top: 120px;
+}
+
+button {
+	margin: 1em 0;
 }
 </style>

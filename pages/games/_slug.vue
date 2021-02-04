@@ -49,9 +49,9 @@ export default {
 	max-width: 1800px;
 }
 
-.scoreboard {
+aside {
 	position: sticky;
-	top: 0;
+	top: 120px;
 }
 
 .controls {
