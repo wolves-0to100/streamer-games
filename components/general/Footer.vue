@@ -15,8 +15,8 @@
 		</div>
 		<div>
 			<h2>Rechtliches</h2>
-			<nuxt-link to="https://0to100.ink/datenschutz/">Datenschutz</nuxt-link>
-			<nuxt-link to="https://0to100.ink/impressum/">Impressum</nuxt-link>
+			<a href="https://0to100.ink/datenschutz/">Datenschutz</a>
+			<a href="https://0to100.ink/impressum/">Impressum</a>
 		</div>
 		<div class="wolves">
 			<p>Made live on <a href="https://0to100.ink">0to100</a></p>
