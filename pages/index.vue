@@ -1,8 +1,8 @@
 <template>
 	<div class="page">
 		<main>
-			<h1>Twitch Games 🎮</h1>
-			<p>Wilkommen bei Twitch Games. Hier hast du die Möglichkeit mit deinem Chat Spiele zu spielen.</p>
+			<h1>Streamer Games 🎮</h1>
+			<p>Wilkommen bei Streamer Games. Hier hast du die Möglichkeit mit deinem Twitch Chat Spiele zu spielen.</p>
 
 			<div class="channelInputWrapper">
 				<label for="channelName">Gib hier deinen Kanalnamen ein:</label>

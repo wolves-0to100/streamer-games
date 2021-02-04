@@ -23,9 +23,6 @@ body {
 	overflow-x: hidden;
 	a {
 		color: #1a1a1a;
-		&.nuxt-link-active {
-			border-bottom: 1px solid #1a1a1a;
-		}
 	}
 }
 .dark-mode body {
@@ -33,9 +30,6 @@ body {
 	color: #e0e0e0;
 	a {
 		color: #e0e0e0;
-		&.nuxt-link-active {
-			border-bottom: 1px solid #e0e0e0;
-		}
 		&:hover {
 			color: #d90000;
 		}
@@ -48,10 +42,15 @@ body {
 		background-color: #2c3136;
 		border: 1px solid rgba(0, 0, 0, 0.4);
 	}
-	button {
+	button,
+	.button {
 		color: #e0e0e0;
 		background-color: #434a54;
 		border: 1px solid rgba(0, 0, 0, 0.4);
+		&:hover {
+			color: #e0e0e0;
+			background-color: #30343b;
+		}
 	}
 }
 
@@ -88,7 +87,9 @@ label {
 
 // TODO: Update button and input for light mode
 
-button {
+button,
+.button {
+	display: inline-block;
 	font-weight: 700;
 	cursor: pointer;
 	border: none;
@@ -100,6 +101,13 @@ button {
 	outline: none;
 	border-radius: 4px;
 	border: 1px solid rgba(255, 255, 255, 0.4);
+	text-decoration: none;
+	transition: all 200ms;
+
+	&:hover {
+		color: #1a1a1a;
+		background-color: rgb(209, 209, 209);
+	}
 }
 
 hr {
