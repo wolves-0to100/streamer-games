@@ -2,7 +2,7 @@
 	<CardItem class="scoreboard">
 		<h2>Scoreboard</h2>
 		<div class="players">
-			<p v-for="player in players.slice(0, 14)" :key="player.username" class="player">
+			<p v-for="player in players.slice(0, displayLimit)" :key="player.username" class="player">
 				{{ player.displayName }} <span>{{ player.score }}</span>
 			</p>
 		</div>
@@ -19,13 +19,19 @@ export default {
 	components: {
 		CardItem,
 	},
+	props: {
+		displayLimit: {
+			type: Number,
+			default: 14,
+		},
+	},
 	computed: {
 		...mapState(['players']),
 	},
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .scoreboard {
 	width: 400px;
 	height: auto;
@@ -34,6 +40,9 @@ export default {
 	display: flex;
 	justify-content: space-between;
 	margin: 0.4em 0;
+	&:nth-child(even) {
+		color: #d90000;
+	}
 }
 
 .players {

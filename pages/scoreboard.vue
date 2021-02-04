@@ -1,6 +1,6 @@
 <template>
 	<div class="page">
-		<scoreboard />
+		<scoreboard :display-limit="200" />
 	</div>
 </template>
 

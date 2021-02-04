@@ -11,6 +11,17 @@ export default {
 			{ hid: 'description', name: 'description', content: '' },
 		],
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+		script: [
+			{
+				async: true,
+				defer: true,
+				'data-website-id': 'e906376f-9add-44cb-af90-df7dc63b8ce2',
+				src: 'https://umami.wolves.ink/umami.js',
+			},
+		],
+		htmlAttrs: {
+			lang: 'de',
+		},
 	},
 
 	// Global CSS (https://go.nuxtjs.dev/config-css)
