@@ -1,21 +1,31 @@
 <template>
 	<div>
-		<page-header></page-header>
-		<Nuxt />
+		<div class="container">
+			<page-header />
+			<Nuxt />
+		</div>
+
+		<Footer />
 	</div>
 </template>
 
 <script>
+import Footer from '~/components/general/Footer.vue';
 import PageHeader from '~/components/general/PageHeader';
 
 export default {
 	components: {
 		PageHeader,
+		Footer,
 	},
 };
 </script>
 
 <style lang="scss" scoped>
+.container {
+	min-height: 100vh;
+}
+
 .page {
 	width: 100%;
 	margin: 0 auto;
