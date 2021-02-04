@@ -50,9 +50,15 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .dark-mode #header {
 	background: rgba(26, 26, 26, 0.6);
+	a.nuxt-link-active {
+		border-bottom: 1px solid #e0e0e0;
+	}
+	.wrapper .logo {
+		border-bottom: none;
+	}
 }
 
 #header {
@@ -103,6 +109,9 @@ export default {
 	a {
 		padding: 6px 0;
 		text-decoration: none;
+		&.nuxt-link-active {
+			border-bottom: 1px solid #1a1a1a;
+		}
 	}
 	button {
 		padding: 0;

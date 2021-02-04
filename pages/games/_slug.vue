@@ -6,6 +6,7 @@
 			<div class="controls">
 				<button v-if="gameIsStarted" @click="toggleGameState">Stop</button>
 				<button v-else @click="toggleGameState">Start</button>
+				<nuxt-link to="/games" class="button">Zurück</nuxt-link>
 			</div>
 		</aside>
 	</div>

@@ -25,6 +25,10 @@ export default {
 </script>
 
 <style scoped>
+.game {
+	cursor: pointer;
+}
+
 .description {
 	margin: 1em 0;
 }
