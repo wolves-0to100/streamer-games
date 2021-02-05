@@ -19,6 +19,7 @@
 			<a href="https://0to100.ink/impressum/">Impressum</a>
 		</div>
 		<div class="wolves">
+			<p>Ich bin <a href="https://gitlab.com/0to100/twitch-games">Open Source</a></p>
 			<p>Made live on <a href="https://0to100.ink">0to100</a></p>
 		</div>
 	</footer>

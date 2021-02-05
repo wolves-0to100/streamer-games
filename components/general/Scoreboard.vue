@@ -2,7 +2,7 @@
 	<CardItem class="scoreboard">
 		<h2>Scoreboard</h2>
 		<div class="players">
-			<p v-for="player in players.slice(0, displayLimit)" :key="player.username" class="player">
+			<p v-for="player in playersByScore" :key="player.username" class="player">
 				{{ player.displayName }} <span>{{ player.score }}</span>
 			</p>
 		</div>
@@ -27,6 +27,9 @@ export default {
 	},
 	computed: {
 		...mapState(['players']),
+		playersByScore() {
+			return [...this.players].sort((a, b) => b.score - a.score).slice(0, this.displayLimit);
+		},
 	},
 };
 </script>
