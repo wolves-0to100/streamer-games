@@ -1,14 +1,9 @@
+import games from '~/assets/games/games.json';
+
 export const state = () => ({
 	channelName: '',
 	players: [],
-	games: [
-		{
-			name: 'Flaggen Quiz',
-			slug: 'flaggen-quiz',
-			description: 'Erkenne die Länder anhand ihrer Falgge.',
-			maxPlayer: null,
-		},
-	],
+	games,
 });
 
 export const mutations = {
