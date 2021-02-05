@@ -13,6 +13,7 @@ Falls du selber ein Spiel entwicklen möchtest:
 -   Kopiere dir das Example Game (In components/games)
 -   Entwickle dein Spiel
 -   Füge dein Spiel zum games.json hinzu (In assets/games/games.json)
+    -   Der Slug sollte genau so sein wie der Component Name des Spieles
 
 Mehr Infos auf: [0to100](https://0to100.ink)
 
