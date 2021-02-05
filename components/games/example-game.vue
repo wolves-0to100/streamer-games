@@ -9,7 +9,7 @@ import { mapState } from 'vuex';
 import tmi from 'tmi.js';
 
 export default {
-	name: 'FlaggenQuiz',
+	name: 'ExampleGame',
 	props: {
 		isStarted: {
 			type: Boolean,
