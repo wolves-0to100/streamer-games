@@ -4,5 +4,11 @@
 		"slug": "flaggen-quiz",
 		"description": "Erkenne die Länder anhand ihrer Falgge.",
 		"maxPlayer": null
+	},
+	{
+		"name": "Tic Tac Toe",
+		"slug": "tic-tac-toe",
+		"description": "Spiele Tic Tac Toe gegen deinen Chat oder lasse zwei Zuschauer gegeneinander spielen.",
+		"maxPlayer": 2
 	}
 ]
