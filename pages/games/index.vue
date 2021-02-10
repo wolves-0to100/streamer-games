@@ -5,6 +5,7 @@
 			<p class="description">
 				Hier hast du die Auswahl von verschiednen Spielen, welche du mit deinem Twitch Chat spielen kannst.
 			</p>
+			<p>Tippt <b>!join</b> in den Chat um mit zu spielen.</p>
 			<div class="games">
 				<game-card v-for="game in games" :key="game.name" :game="game" @click="selectGame(game)" />
 			</div>
@@ -55,7 +56,7 @@ main {
 	width: 100%;
 	.description {
 		margin: 1em 0;
-		max-width: 400px;
+		max-width: 460px;
 	}
 }
 

@@ -160,6 +160,10 @@ export default {
 			if (!win && boardFull) this.resetGame();
 		},
 		setWinner() {
+			const player = this.players.find((player) => {
+				return player.username === this.currentPlayer;
+			});
+			player.score += 10;
 			this.winner = this.currentPlayer;
 			this.gameStarted = false;
 			setTimeout(this.resetGame, 10000);

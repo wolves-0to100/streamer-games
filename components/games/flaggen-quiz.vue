@@ -1,7 +1,22 @@
 <template>
 	<div class="gameContainer">
 		<h1>Flaggen Quiz</h1>
-		<div v-if="currentCountry" class="game">
+		<div v-if="!currentCountry" class="settings">
+			<p>Wähle aus in welcher Form das Land in den Chat geschrieben werden muss.</p>
+			<div v-if="!answerForm">
+				<button @click="answerForm = 'de'">Deutsch</button>
+				<button @click="answerForm = 'name'">Englisch</button>
+				<button @click="answerForm = 'code'">Ländercode</button>
+			</div>
+			<div v-else>
+				<p>Gebt eure Antworten in in folgendem Format:</p>
+				<p>
+					z.B. wenn die deutsche Flagge zu sehen ist: <b v-if="answerForm === 'de'">Deutschland</b
+					><b v-if="answerForm === 'name'">Germany</b><b v-if="answerForm === 'code'">DE</b>
+				</p>
+			</div>
+		</div>
+		<div v-else class="game">
 			<h2>
 				<span>Ländername: </span>
 				<span v-if="soulutionsShown">{{ currentCountry.name }} ({{ currentCountry.de }})</span>
@@ -37,6 +52,7 @@ export default {
 			currentCountry: null,
 			countdown: 16,
 			interval: null,
+			answerForm: '',
 		};
 	},
 	computed: {
@@ -72,11 +88,7 @@ export default {
 
 		client.on('message', (channel, tags, message, self) => {
 			if (this.interval && !this.soulutionsShown) {
-				if (
-					message.toLowerCase() === this.currentCountry.name.toLowerCase() ||
-					message.toLowerCase() === this.currentCountry.code.toLowerCase() ||
-					message.toLowerCase() === this.currentCountry.de.toLowerCase()
-				) {
+				if (message.toLowerCase() === this.currentCountry[this.answerForm].toLowerCase()) {
 					this.$store.commit('updateScore', {
 						username: tags.username,
 						points: this.countdown,
@@ -131,5 +143,11 @@ img {
 	display: block;
 	width: 100%;
 	max-width: 800px;
+}
+
+.settings {
+	p {
+		margin: 1em 0;
+	}
 }
 </style>
