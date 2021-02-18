@@ -3,16 +3,16 @@
 		<h1>Flaggen Quiz</h1>
 		<div v-if="!currentCountry" class="settings">
 			<p>Wähle aus in welcher Form das Land in den Chat geschrieben werden muss.</p>
-			<div v-if="!answerForm">
-				<button @click="answerForm = 'de'">Deutsch</button>
-				<button @click="answerForm = 'name'">Englisch</button>
-				<button @click="answerForm = 'code'">Ländercode</button>
+			<div v-if="!answerType">
+				<button @click="answerType = 'de'">Deutsch</button>
+				<button @click="answerType = 'name'">Englisch</button>
+				<button @click="answerType = 'code'">Ländercode</button>
 			</div>
 			<div v-else>
 				<p>Gebt eure Antworten in in folgendem Format:</p>
 				<p>
-					z.B. wenn die deutsche Flagge zu sehen ist: <b v-if="answerForm === 'de'">Deutschland</b
-					><b v-if="answerForm === 'name'">Germany</b><b v-if="answerForm === 'code'">DE</b>
+					z.B. wenn die deutsche Flagge zu sehen ist: <b v-if="answerType === 'de'">Deutschland</b
+					><b v-if="answerType === 'name'">Germany</b><b v-if="answerType === 'code'">DE</b>
 				</p>
 			</div>
 		</div>
@@ -52,14 +52,11 @@ export default {
 			currentCountry: null,
 			countdown: 16,
 			interval: null,
-			answerForm: '',
+			answerType: '',
 		};
 	},
 	computed: {
 		...mapState(['channelName', 'players']),
-		playersByScore() {
-			return [...this.players].sort((a, b) => b.score - a.score).slice(0, 6);
-		},
 		doubleDigitCountdown() {
 			return this.countdown.toString().padStart(2, '0');
 		},
@@ -88,7 +85,7 @@ export default {
 
 		client.on('message', (channel, tags, message, self) => {
 			if (this.interval && !this.soulutionsShown) {
-				if (message.toLowerCase() === this.currentCountry[this.answerForm].toLowerCase()) {
+				if (message.toLowerCase() === this.currentCountry[this.answerType].toLowerCase()) {
 					this.$store.commit('updateScore', {
 						username: tags.username,
 						points: this.countdown,

@@ -1,0 +1,140 @@
+[
+    {
+        "question": "In welchem ​​Jahr ist die Titanic am 15. April auf ihrer Jungfernfahrt von Southampton im Atlantik gesunken?",
+        "answer": "1912",
+        "accept": ["1912"]
+    },
+    {
+        "question": "Wie heißt das größte Technologieunternehmen in Südkorea?",
+        "answer": "Samsung",
+        "accept": ["samsung"]
+    },
+    {
+        "question": "Was ist die Hauptstadt von Portugal?",
+        "answer": "Lissabon",
+        "accept": ["lissabon"]
+    },
+    {
+        "question": "Was ist das chemische Symbol für Silber?",
+        "answer": "Ag",
+        "accept": ["ag"]
+    },
+    {
+        "question": "Was ist der kleinste Vogel der Welt?",
+        "answer": "Bienen-Kolibri",
+        "accept": ["bienen-Kkolibri", "bienen kolibri", "bienenkolibri"]
+    },
+    {
+        "question": "Was ist die Lebensdauer einer Libelle? (Mit Einheit)",
+        "answer": "24 Stunden",
+        "accept": ["24 stunden", "24h", "24 h"]
+    },
+    {
+        "question": "Wer hat 1810 die Blechdose zur Konservierung von Lebensmitteln erfunden?",
+        "answer": "Peter Durand",
+        "accept": ["peter durand"]
+    },
+    {
+        "question": "Was ist die Puppe, Barbies, vollständiger Name?",
+        "answer": "Barbara Millicent Roberts",
+        "accept": ["barbara millicent roberts"]
+    },
+    {
+        "question": "In welchem ​​Jahr wurde The Godfather zum ersten Mal veröffentlicht?",
+        "answer": "1972",
+        "accept": ["1972"]
+    },
+    {
+        "question": "Welcher Schauspieler gewann den Oscar für den besten Schauspieler für die Filme Philadelphia (1993) und Forrest Gump (1994)?",
+        "answer": "Tom Hanks",
+        "accept": ["tom hanks"]
+    },
+    {
+        "question": "Welches Land hat das Synchronschwimmen bei den Olympischen Sommerspielen mit fünf Goldmedaillen seit seiner Wiedereinführung in die Spiele im Jahr 2000 dominiert?",
+        "answer": "Russland",
+        "accept": ["russland"]
+    },
+    {
+        "question": "Der Kanadier Connor McDavid ist ein aufstrebender Star in welchem ​​Sport?",
+        "answer": "Eishockey",
+        "accept": ["eishockey"]
+    },{
+        "question": "Wie viele Spieler gibt es in einem Wasserballteam?",
+        "answer": "Sieben",
+        "accept": ["sieben", "7"]
+    },{
+        "question": "Wer hat einen Hammer und eine Feder auf den Mond fallen lassen, um zu demonstrieren, dass sie ohne Luft gleich schnell fallen?",
+        "answer": "David R. Scott",
+        "accept": ["david r. scott", "david scott", "david randolph scott"]
+    },{
+        "question": "Wie viele Herzen hat ein Oktopus?",
+        "answer": "Drei",
+        "accept": ["drei", "3"]
+    },{
+        "question": "In welchem ​​Jahr wurde das Produkt WD40 vom Chemiker Norm Larsen erfunden?",
+        "answer": "1953",
+        "accept": ["1953"]
+    }
+
+    ,{
+        "question": "Wie viele Haare hat ein typischer menschlicher Kopf auf die nächsten tausend?",
+        "answer": "10.000 Haare",
+        "accept": ["10,000 haare", "10.000 haare", "10000 Haare", "10000", "10,000", "10.000"]
+    }
+    ,{
+        "question": "Wer hat das Grammophon erfunden?",
+        "answer": "Emile Berliner",
+        "accept": ["emile berliner"]
+    }
+    ,{
+        "question": "Wie viele Jahre wird es dauern, bis ein von der Erde abgefeuertes Raumschiff den Planeten Pluto erreicht?",
+        "answer": "9,5",
+        "accept": ["neuneinhalb", "9,5", "9.5"]
+    },{
+        "question": "1930 erhielten Albert Einstein und ein Kollege das US-Patent 1781541. Wofür war es?",
+        "answer": "Kühlschrank",
+        "accept": ["kühlschrank"]
+    },{
+        "question": "Wie viel Prozent der Masse des Sonnensystems befindet sich in der Sonne auf 1 Prozent genau?",
+        "answer": "99",
+        "accept": ["99", "99%", "99 %", "99 Prozent"]
+    },{
+        "question": "Was ist die durchschnittliche Oberflächentemperatur auf der Venus? (In °C)",
+        "answer": "460",
+        "accept": ["460", "460°C", "460 Grad"]
+    },{
+        "question": "Welche amerikanische Popgruppe der 1960er Jahre hat den 'Surfin Sound' kreiert?",
+        "answer": "Beach Boys",
+        "accept": ["beach boys"]
+    },
+    {
+        "question": "Wie viele Elektronen befinden sich höchstens auf der innersten Schale eines Atoms?",
+        "answer": "2",
+        "accept": ["2", "zwei"]
+    },
+    {
+        "question": "In welchem ​​Jahr gingen die Beatles zum ersten Mal in die USA?",
+        "answer": "1964",
+        "accept": ["1964"]
+    },
+    {
+        "question": "Welcher amerikanische Popstar hatte 2015 mit den Singles 'Sorry' und 'Love Yourself' hintereinander Chart-Erfolge?",
+        "answer": "Justin Bieber",
+        "accept": ["justin bieber"]
+    },
+    {
+        "question": "In welchem Land steht die Pyramide von Gizeh und die Große Sphinx?",
+        "answer": "Ägypten",
+        "accept": ["ägypten", "aegypten"]
+    },
+    {
+        "question": "Wie heißt die erste Schrift, die in Japan unterrichtet wird?",
+        "answer": "Hiragana",
+        "accept": ["hiragana"]
+    },
+    {
+        "question": "Wie heißt der Leader der Gruppe BTS?",
+        "answer": "Kim Namjoo oder RM",
+        "accept": ["rm", "namjoon", "kim namjoon"]
+    }
+]
