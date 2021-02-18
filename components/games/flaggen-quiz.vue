@@ -27,6 +27,7 @@
 				<img :src="require('~/assets/games/flaggen-quiz/flags/' + currentCountry.code + '.svg')" />
 			</div>
 
+			<p v-if="correctGuesses">Richtig geantwortet haben: {{ correctGuesses }}</p>
 			<p>T-00:{{ doubleDigitCountdown }}</p>
 		</div>
 	</div>
@@ -53,12 +54,16 @@ export default {
 			countdown: 16,
 			interval: null,
 			answerType: '',
+			answered: [],
 		};
 	},
 	computed: {
 		...mapState(['channelName', 'players']),
 		doubleDigitCountdown() {
 			return this.countdown.toString().padStart(2, '0');
+		},
+		correctGuesses() {
+			return this.answered.join(', ');
 		},
 	},
 	watch: {
@@ -86,10 +91,13 @@ export default {
 		client.on('message', (channel, tags, message, self) => {
 			if (this.interval && !this.soulutionsShown) {
 				if (message.toLowerCase() === this.currentCountry[this.answerType].toLowerCase()) {
-					this.$store.commit('updateScore', {
-						username: tags.username,
-						points: this.countdown,
-					});
+					if (!this.answered.includes(tags['display-name'])) {
+						this.answered.push(tags['display-name']);
+						this.$store.commit('updateScore', {
+							username: tags.username,
+							points: this.countdown,
+						});
+					}
 				}
 			}
 		});
@@ -103,6 +111,7 @@ export default {
 				this.countdown = 10;
 				this.startCountdown();
 			} else if (this.isStarted) {
+				this.answered = [];
 				this.soulutionsShown = false;
 				this.currentCountry = this.leftCountries.pop();
 				this.countdown = 16;
