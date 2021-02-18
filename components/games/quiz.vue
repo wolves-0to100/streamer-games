@@ -56,6 +56,7 @@ export default {
 	watch: {
 		isStarted() {
 			if (this.isStarted) {
+				this.answered = [];
 				this.solutionShown = false;
 				this.currentQuestion = this.leftQuestions.pop();
 				this.countdown = this.guessTime;
