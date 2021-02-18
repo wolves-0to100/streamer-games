@@ -11,19 +11,19 @@
 		"lint": "npm run lint:js"
 	},
 	"dependencies": {
-		"@nuxtjs/pwa": "^3.0.2",
-		"core-js": "^3.6.5",
+		"@nuxtjs/pwa": "^3.3.5",
+		"core-js": "^3.8.3",
 		"node-sass": "^5.0.0",
-		"nuxt": "^2.14.6",
+		"nuxt": "^2.15.0",
 		"sass-loader": "^10.1.1",
 		"tmi.js": "^1.7.1"
 	},
 	"devDependencies": {
-		"@nuxtjs/color-mode": "^2.0.2",
+		"@nuxtjs/color-mode": "^2.0.3",
 		"@nuxtjs/eslint-config": "^3.1.0",
 		"@nuxtjs/eslint-module": "^2.0.0",
 		"babel-eslint": "^10.1.0",
-		"eslint": "^7.10.0",
+		"eslint": "^7.20.0",
 		"eslint-config-prettier": "^6.12.0",
 		"eslint-plugin-nuxt": "^1.0.0",
 		"eslint-plugin-prettier": "^3.1.4",
