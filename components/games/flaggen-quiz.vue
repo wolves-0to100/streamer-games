@@ -69,6 +69,7 @@ export default {
 	watch: {
 		isStarted() {
 			if (this.isStarted) {
+				this.answered = [];
 				this.soulutionsShown = false;
 				this.currentCountry = this.leftCountries.pop();
 				this.countdown = 16;
