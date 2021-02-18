@@ -37,7 +37,7 @@ export default {
 		return {
 			solutionShown: false,
 			leftQuestions: [],
-			answerd: [],
+			answered: [],
 			currentQuestion: null,
 			countdown: 20,
 			interval: null,
@@ -50,7 +50,7 @@ export default {
 			return this.countdown.toString().padStart(2, '0');
 		},
 		correctGuesses() {
-			return this.answerd.join(', ');
+			return this.answered.join(', ');
 		},
 	},
 	watch: {
@@ -78,8 +78,8 @@ export default {
 		client.on('message', (channel, tags, message, self) => {
 			if (this.interval && !this.solutionShown) {
 				if (this.currentQuestion.accept.includes(message.toLowerCase())) {
-					if (!this.answerd.includes(tags['display-name'])) {
-						this.answerd.push(tags['display-name']);
+					if (!this.answered.includes(tags['display-name'])) {
+						this.answered.push(tags['display-name']);
 						this.$store.commit('updateScore', {
 							username: tags.username,
 							points: this.countdown,
@@ -98,7 +98,7 @@ export default {
 				this.countdown = 10;
 				this.startCountdown();
 			} else if (this.isStarted) {
-				this.answerd = [];
+				this.answered = [];
 				this.solutionShown = false;
 				this.currentQuestion = this.leftQuestions.pop();
 				this.countdown = this.guessTime;
