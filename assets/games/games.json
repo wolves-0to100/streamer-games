@@ -10,5 +10,11 @@
 		"slug": "tic-tac-toe",
 		"description": "Spiele Tic Tac Toe gegen deinen Chat oder lasse zwei Zuschauer gegeneinander spielen.",
 		"maxPlayer": 2
+	},
+	{
+		"name": "Quiz",
+		"slug": "quiz",
+		"description": "Du kennst die Antwort? Dann rein in den Chat damit.",
+		"maxPlayer": null
 	}
 ]
