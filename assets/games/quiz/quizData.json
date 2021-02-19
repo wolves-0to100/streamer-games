@@ -136,5 +136,20 @@
         "question": "Wie heißt der Leader der Gruppe BTS?",
         "answer": "Kim Namjoo oder RM",
         "accept": ["rm", "namjoon", "kim namjoon"]
+    },
+    {
+        "question": "Wie heiß ist die Oberfläche der Sonne? (In °C)",
+        "answer": "ca. 6.000 °C",
+        "accept": ["6000", "6.000", "6,000", "6000 grad", "6.000 grad"]
+    },
+    {
+        "question": "Wie heißt die Hauptstadt Spaniens?",
+        "answer": "Madrid",
+        "accept": ["madrid"]
+    },
+    {
+        "question": "Wie weit ist die Sonne von der Erde entfernt? (In km)",
+        "answer": "384.400 km",
+        "accept": ["384400", "384.400", "384,400", "384400km", "384.400km", "384,400km", "384400 km", "384.400 km", "384,400 km"]
     }
 ]
