@@ -7,8 +7,11 @@
 </template>
 
 <script>
+import CardItem from '~/components/general/CardItem';
+
 export default {
 	name: 'GameCard',
+	components: { CardItem },
 	props: {
 		game: {
 			type: Object,
