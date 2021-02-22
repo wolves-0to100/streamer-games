@@ -151,5 +151,100 @@
         "question": "Wie weit ist die Sonne von der Erde entfernt? (In km)",
         "answer": "384.400 km",
         "accept": ["384400", "384.400", "384,400", "384400km", "384.400km", "384,400km", "384400 km", "384.400 km", "384,400 km"]
+    },
+    {
+        "question": "Welches Gebirge stellt einen Teil der asiatisch-europäischen Grenze dar?",
+        "answer": "Ural",
+        "accept": ["ural", "ural gebirge"]
+    },
+    {
+        "question": "Wie hieß das Buch, welches als Buchvorlage für den Film 'Jurassic Park' diente (1993)?",
+        "answer": "DinoPark",
+        "accept": ["dinopark"]
+    },
+    {
+        "question": "Wie heißt die ungarische Währung?",
+        "answer": "Forint",
+        "accept": ["forint"]
+    },
+    {
+        "question": "Wer wählt in Deutschland den Bundespräsidenten?",
+        "answer": "Die Bundesversammlung",
+        "accept": ["bundesversammlung", "die bundesversammlung"]
+    },
+    {
+        "question": "Wo steht die Porta Nigra?",
+        "answer": "Trier",
+        "accept": ["trier", "in trier"]
+    },
+    {
+        "question": "Unter welchem Namen kennt man Schnittlauch noch?",
+        "answer": "Jakobszwiebel",
+        "accept": ["jakobszwiebel", "jakobszwiebeln"]
+    },
+    {
+        "question": "Die größte Insel der Welt heißt?",
+        "answer": "Grönland",
+        "accept": ["grönland", "groenland"]
+    },
+    {
+        "question": "In welchem Jahr war der Reichstagsbrand?",
+        "answer": "1933",
+        "accept": ["1933"]
+    },
+    {
+        "question": "Was ist das Plural von Maximum?",
+        "answer": "Maxima",
+        "accept": ["maxima"]
+    },
+    {
+        "question": "Wo liegen die Everglades? (Bundesstaat)",
+        "answer": "Florida",
+        "accept": ["florida"]
+    },
+    {
+        "question": "Wer sang 1991 'Das ganze Leben ist ein Quiz'?",
+        "answer": "Hape Kerkeling",
+        "accept": ["hape kerkeling"]
+    },
+    {
+        "question": "Wo kann man die berühmte Terrakotta-Armee bestaunen? (Land)",
+        "answer": "China",
+        "accept": ["china"]
+    },
+    {
+        "question": "Welchen Namen trägt die erste Raumstation der Welt?",
+        "answer": "Saljut 1",
+        "accept": ["saljut 1", "saljut"]
+    },
+    {
+        "question": "Wie lang ist der Große Afrikanische Grabenbruch? (auf 1.000km gerundet)",
+        "answer": "6.000 Kilometer",
+        "accept": ["6.000 kilometer", "6000 kilometer", "6.000km", "6000km", "6000 km", "6.000 km", "6.000", "6000"]
+    },
+    {
+        "question": "Welcher Verein verfügt über die meisten Titelgewinne in der UEFA Champions League? (Stand: 2019, Statista)",
+        "answer": "Real Madrid",
+        "accept": ["real madrid", "6000 kilometer"]
+    },
+    {
+        "question": "'Am Rande der kleinen, kleinen Stadt lag ein alter, verwahrloster Garten.' Welches Kinderbuch beginnt mit diesem Satz?",
+        "answer": "Pippi Langstrumpf",
+        "accept": ["pippi langstrumpf"]
+    },
+    {
+        "question": "Wann kam die erste Antibabypille in den USA auf dem Markt? (Jahr)",
+        "answer": "1960",
+        "accept": ["1960"]
+    },
+    {
+        "question": "Wasserstoff ist ein chemisches Element mit dem Symbol?",
+        "answer": "H",
+        "accept": ["h"]
+    },
+    {
+        "question": "Welche Temperatur herrscht etwa im inneren Erdkern?",
+        "answer": "mehr als 5.000 °C",
+        "accept": ["5.000", "5000", "5.000 Grad", "5000 Grad", "5.000 °C", "5000 °C", "5.000°C", "5000°C"]
     }
 ]
