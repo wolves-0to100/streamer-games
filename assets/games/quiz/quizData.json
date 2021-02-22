@@ -148,7 +148,7 @@
         "accept": ["madrid"]
     },
     {
-        "question": "Wie weit ist die Sonne von der Erde entfernt? (In km)",
+        "question": "Wie weit ist der Mond von der Erde entfernt? (In km)",
         "answer": "384.400 km",
         "accept": ["384400", "384.400", "384,400", "384400km", "384.400km", "384,400km", "384400 km", "384.400 km", "384,400 km"]
     },
