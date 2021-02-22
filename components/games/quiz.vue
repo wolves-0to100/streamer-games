@@ -3,8 +3,9 @@
 		<h1>Quiz</h1>
 		<div v-if="!currentQuestion" class="intro">
 			<p>
-				Beim Quiz werden Fragen aus verschiednen Bereichen gestellt. Wenn du mitmachen möchtest tippe:
-				<b>!join</b> in den Chat. Danach kannst du die Antworten einfach in den Chat schreiben.
+				Beim Quiz werden Fragen aus verschiednen Bereichen gestellt. Wenn du mitmachen möchtest, tippe:
+				<b>!join</b> in den Chat. Danach kannst du die Antworten einfach in den Chat schreiben. (Wenn du
+				Antwortest schreibe nur die Antworten in den Chat)
 			</p>
 		</div>
 		<div v-else class="quiz">
