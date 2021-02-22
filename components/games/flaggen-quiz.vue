@@ -28,7 +28,7 @@
 				<img :src="require('~/assets/games/flaggen-quiz/flags/' + currentCountry.code + '.svg')" />
 			</div>
 
-			<p v-if="correctGuesses">Richtig geantwortet haben: {{ correctGuesses }}</p>
+			<p v-if="correctGuesses && soulutionsShown">Richtig geantwortet haben: {{ correctGuesses }}</p>
 			<p>T-00:{{ doubleDigitCountdown }}</p>
 		</div>
 	</div>
