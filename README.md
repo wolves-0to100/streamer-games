@@ -10,10 +10,12 @@ Für neue Spielvorschläge bin ich immer offen. Schreibe mit einfach auf Twitter
 
 Falls du selber ein Spiel entwicklen möchtest:
 
+-   Forke das Repo
 -   Kopiere dir das Example Game (In components/games)
 -   Entwickle dein Spiel
 -   Füge dein Spiel zum games.json hinzu (In assets/games/games.json)
     -   Der Slug sollte genau so sein wie der Component Name des Spieles
+-   Erstelle eine Merge Request
 
 Mehr Infos auf: [0to100](https://0to100.ink)
 
