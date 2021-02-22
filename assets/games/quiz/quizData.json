@@ -246,5 +246,85 @@
         "question": "Welche Temperatur herrscht etwa im inneren Erdkern?",
         "answer": "mehr als 5.000 °C",
         "accept": ["5.000", "5000", "5.000 Grad", "5000 Grad", "5.000 °C", "5000 °C", "5.000°C", "5000°C"]
+    },
+    {
+        "question": "Wie viele Menschen gelten weltweit als hochbegabt, haben also einen IQ von mindestens 130? (in Prozent)",
+        "answer": "etwa 2 Prozent",
+        "accept": ["2", "2%", "2 %", "2 Prozent"]
+    },
+    {
+        "question": "Welches Element steht an erster Stelle im Periodensystem?",
+        "answer": "Wasserstoff",
+        "accept": ["wasserstoff", "h"]
+    },
+    {
+        "question": "Wie nennt man den Punkt im Auge, der auch als schärfste Stelle des Sehens bekannt ist?",
+        "answer": "Gelber Fleck",
+        "accept": ["gelber fleck"]
+    },
+    {
+        "question": "Wann ereignete sich die Kubakrise?",
+        "answer": "1962",
+        "accept": ["1962"]
+    },
+    {
+        "question": "In Kombination mit welchem Vitamin wird Eisen besonders gut vom menschlichen Körper aufgenommen?",
+        "answer": "Vitamin C",
+        "accept": ["vitamin c", "c"]
+    },
+    {
+        "question": "Was ist die Amtssprache Brasiliens?",
+        "answer": "Portugiesisch",
+        "accept": ["portugiesisch"]
+    },
+    {
+        "question": "Welches Land hat für gleichgeschlechtliche Paare als erstes Land der Welt die 'Registrierte Partnerschaft' eingeführt?",
+        "answer": "Dänemark",
+        "accept": ["dänemark", "daenemark"]
+    },
+    {
+        "question": "Europas wasserreichster Fluss heißt?",
+        "answer": "Wolga",
+        "accept": ["wolga"]
+    },
+    {
+        "question": "Wer gilt als der bisher erfolgreichster Olympionike? (Stand: Februar, 2021)",
+        "answer": "Michael Phelps",
+        "accept": ["michael phelps", "phelps"]
+    },
+    {
+        "question": "Wann fand die erste Berlinale statt?",
+        "answer": "1951",
+        "accept": ["1951"]
+    },
+    {
+        "question": "Der westlichste Punkt des kontinentalen Europas liegt in? (Gesucht ist ein Land)",
+        "answer": "Portugal (Cabo da Roca)",
+        "accept": ["portugal"]
+    },
+    {
+        "question": "Wann legalisierte Kanada den Konsum von Cannabis für Erwachsene?",
+        "answer": "2018",
+        "accept": ["2018"]
+    },
+    {
+        "question": "Wann entdeckte Christoph Kolumbus Amerika?",
+        "answer": "1492",
+        "accept": ["1492"]
+    },
+    {
+        "question": "Welches ist das leichteste Element im Periodensystem?",
+        "answer": "Wasserstoff",
+        "accept": ["wasserstoff", "h"]
+    },
+    {
+        "question": "Der Marianengraben ist der tiefste Tiefseegraben des Weltmeeres. Doch wie viele Gräben weltweit haben eine Tiefe von mehr als 10.000 Metern?",
+        "answer": "6",
+        "accept": ["6"]
+    },
+    {
+        "question": "In welchem Jahr kam das erste iPhone auf den Markt?",
+        "answer": "2007",
+        "accept": ["2007"]
     }
 ]
