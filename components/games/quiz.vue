@@ -15,7 +15,7 @@
 			</p>
 		</div>
 		<div v-if="currentQuestion">
-			<p v-if="correctGuesses">Richtig geantwortet haben: {{ correctGuesses }}</p>
+			<p v-if="correctGuesses && solutionShown">Richtig geantwortet haben: {{ correctGuesses }}</p>
 			<p>T-00:{{ doubleDigitCountdown }}</p>
 		</div>
 	</div>
