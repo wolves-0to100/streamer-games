@@ -19,7 +19,8 @@
 		<div v-else class="game">
 			<h2>
 				<span>Ländername: </span>
-				<span v-if="soulutionsShown">{{ currentCountry.name }} ({{ currentCountry.de }})</span>
+				<span v-if="soulutionsShown">{{ currentCountry[answerType] }}</span>
+				<span v-if="answerType === 'code'"> (currentCountry.de)</span>
 				<span v-else>?</span>
 			</h2>
 
