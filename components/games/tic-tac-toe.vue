@@ -104,7 +104,7 @@ export default {
 			if (this.player1) {
 				this.player2 = this.players[Math.floor(Math.random() * this.players.length)].username;
 			} else if (streamerGame) {
-				this.player1 = this.channelName;
+				this.player1 = this.channelName.toLowerCase();
 				this.player2 = this.players[Math.floor(Math.random() * this.players.length)].username;
 			} else {
 				if (this.players.length <= 1) return;
