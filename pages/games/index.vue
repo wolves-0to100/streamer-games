@@ -64,7 +64,7 @@ main {
 	margin: 20px 0;
 	display: grid;
 	grid-gap: 12px;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 aside {

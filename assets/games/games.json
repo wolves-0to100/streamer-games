@@ -16,5 +16,11 @@
 		"slug": "quiz",
 		"description": "Du kennst die Antwort? Dann rein in den Chat damit.",
 		"maxPlayer": null
+	},
+	{
+		"name": "Hauptstadtjungel",
+		"slug": "capital-quiz",
+		"description": "Kennst du alle Hauptstädte? Finde es jetzt herraus.",
+		"maxPlayer": null
 	}
 ]

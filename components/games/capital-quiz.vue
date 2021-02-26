@@ -1,34 +1,18 @@
 <template>
 	<div class="gameContainer">
-		<h1>Flaggen Quiz</h1>
-		<div v-if="!currentCountry" class="settings">
-			<p>Wähle aus in welcher Form das Land in den Chat geschrieben werden muss.</p>
-			<div v-if="!answerType">
-				<button @click="answerType = 'de'">Deutsch</button>
-				<button @click="answerType = 'name'">Englisch</button>
-				<button @click="answerType = 'code'">Ländercode</button>
-			</div>
-			<div v-else>
-				<p>Gebt eure Antworten in in folgendem Format:</p>
-				<p>
-					z.B. wenn die deutsche Flagge zu sehen ist: <b v-if="answerType === 'de'">Deutschland</b
-					><b v-if="answerType === 'name'">Germany</b><b v-if="answerType === 'code'">DE</b>
-				</p>
-			</div>
+		<h1>Hauptstadtjungel</h1>
+		<div v-if="!currentCapital" class="settings">
+			<p>
+				Hier geht es darum die Haupstadt zu einem Land zu nennen. Wenn du die Antwort kennst, tippe sie in den
+				Chat. Dabei sollte deine Nachricht nur den Namen der Stadt beinhalten. (Auf Deutsch)
+			</p>
 		</div>
 		<div v-else class="game">
-			<h2>
-				<span>Ländername: </span>
-				<span v-if="soulutionsShown">{{ currentCountry[answerType] }}</span>
-				<span v-if="answerType === 'code'"> (currentCountry.de)</span>
-				<span v-else>?</span>
-			</h2>
+			<h2>Wie heißt die Haupstadt von {{ currentCapital.country }}</h2>
 
-			<div class="imageWrapper">
-				<img :src="require('~/assets/games/flaggen-quiz/flags/' + currentCountry.code + '.svg')" />
-			</div>
+			<p v-if="soulutionShown">Die Hauptstadt ist: {{ currentCapital.city }}</p>
 
-			<p v-if="correctGuesses && soulutionsShown">Richtig geantwortet haben: {{ correctGuesses }}</p>
+			<p v-if="correctGuesses && soulutionShown">Richtig geantwortet haben: {{ correctGuesses }}</p>
 			<p>T-00:{{ doubleDigitCountdown }}</p>
 		</div>
 	</div>
@@ -37,7 +21,7 @@
 <script>
 import { mapState } from 'vuex';
 import tmi from 'tmi.js';
-import countries from '~/assets/games/flaggen-quiz/countries.json';
+import capitals from '~/assets/games/capitals/capitalsData.json';
 
 export default {
 	name: 'FlaggenQuiz',
@@ -49,12 +33,11 @@ export default {
 	},
 	data() {
 		return {
-			soulutionsShown: false,
-			leftCountries: [],
-			currentCountry: null,
+			soulutionShown: false,
+			leftCapitals: [],
+			currentCapital: null,
 			countdown: 16,
 			interval: null,
-			answerType: '',
 			answered: [],
 		};
 	},
@@ -71,15 +54,15 @@ export default {
 		isStarted() {
 			if (this.isStarted) {
 				this.answered = [];
-				this.soulutionsShown = false;
-				this.currentCountry = this.leftCountries.pop();
+				this.soulutionShown = false;
+				this.currentCapital = this.leftCapitals.pop();
 				this.countdown = 16;
 				this.startCountdown();
 			}
 		},
 	},
 	mounted() {
-		this.leftCountries = this.shuffleArray([...countries]);
+		this.leftCapitals = this.shuffleArray([...capitals]);
 		const client = new tmi.Client({
 			connection: {
 				secure: true,
@@ -91,8 +74,8 @@ export default {
 		client.connect();
 
 		client.on('message', (channel, tags, message, self) => {
-			if (this.interval && !this.soulutionsShown) {
-				if (message.toLowerCase() === this.currentCountry[this.answerType].toLowerCase()) {
+			if (this.interval && !this.soulutionShown) {
+				if (message.toLowerCase() === this.currentCapital.city.toLowerCase()) {
 					if (!this.answered.includes(tags['display-name'])) {
 						this.answered.push(tags['display-name']);
 						this.$store.commit('updateScore', {
@@ -108,14 +91,14 @@ export default {
 		stopCountdown() {
 			clearInterval(this.interval);
 			this.interval = null;
-			if (!this.soulutionsShown) {
-				this.soulutionsShown = true;
+			if (!this.soulutionShown) {
+				this.soulutionShown = true;
 				this.countdown = 10;
 				this.startCountdown();
 			} else if (this.isStarted) {
 				this.answered = [];
-				this.soulutionsShown = false;
-				this.currentCountry = this.leftCountries.pop();
+				this.soulutionShown = false;
+				this.currentCapital = this.leftCapitals.pop();
 				this.countdown = 16;
 				this.startCountdown();
 			}
@@ -142,20 +125,11 @@ h1 {
 	margin: 0 0 0.8em;
 }
 
-.imageWrapper {
-	width: 100%;
+h2 {
+	margin-bottom: 2em;
+}
+
+p {
 	margin: 1em 0;
-}
-
-img {
-	display: block;
-	width: 100%;
-	max-width: 800px;
-}
-
-.settings {
-	p {
-		margin: 1em 0;
-	}
 }
 </style>
