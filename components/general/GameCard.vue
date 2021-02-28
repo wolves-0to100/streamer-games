@@ -2,7 +2,7 @@
 	<CardItem class="game" @click="$emit('click')">
 		<h2>{{ game.name }}</h2>
 		<p class="description">{{ game.description }}</p>
-		<p class="details">Maximale Spieler: {{ game.maxPlayers || 'kein Limit' }}</p>
+		<p class="details">Maximale Spieler: {{ game.maxPlayer || 'kein Limit' }}</p>
 	</CardItem>
 </template>
 

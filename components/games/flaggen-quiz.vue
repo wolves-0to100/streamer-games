@@ -124,7 +124,7 @@ export default {
 			if (!this.channelName) this.$router.push('/');
 			this.interval = setInterval(() => {
 				this.countdown--;
-				if (this.countdown === 0) this.stopCountdown();
+				if (this.countdown <= 0) this.stopCountdown();
 			}, 1000);
 		},
 		shuffleArray(arr) {
