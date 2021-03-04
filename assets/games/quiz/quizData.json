@@ -313,11 +313,6 @@
         "accept": ["1492"]
     },
     {
-        "question": "Welches ist das leichteste Element im Periodensystem?",
-        "answer": "Wasserstoff",
-        "accept": ["wasserstoff", "h"]
-    },
-    {
         "question": "Der Marianengraben ist der tiefste Tiefseegraben des Weltmeeres. Doch wie viele Gräben weltweit haben eine Tiefe von mehr als 10.000 Metern?",
         "answer": "6",
         "accept": ["6"]
@@ -326,5 +321,30 @@
         "question": "In welchem Jahr kam das erste iPhone auf den Markt?",
         "answer": "2007",
         "accept": ["2007"]
+    },
+    {
+        "question": "Wie viele Richter beschäftigt der Supreme Court of the United States, also der Oberste Gerichtshof der Vereinigten Staaten von Amerika? (Stand: Januar, 2021)",
+        "answer": "9",
+        "accept": ["neun", "9"]
+    },
+    {
+        "question": "Wie lautet das englische Wort für Schere?",
+        "answer": "Scissors",
+        "accept": ["scissors"]
+    },
+    {
+        "question": "Welches ist das größte eierlegende Säugetier?",
+        "answer": "Schnabeltier",
+        "accept": ["schnabeltier"]
+    },
+    {
+        "question": "Von welchem Politiker stammt das folgende Zitat: 'Ich vertrete einen traditionellen Ehebegriff: die Vereinigung von Mann und Frau. Dazu stehe ich, und solche Positionen muss meine Partei aushalten.'",
+        "answer": "Annegret Kramp-Karrenbauer",
+        "accept": ["annegret kramp-karrenbauer", "kramp-karrenbauer", "akk"]
+    },
+    {
+        "question": "Wie lange wird die Sonne in etwa noch leuchten? (In Jahren)",
+        "answer": "5 Milliarden Jahre",
+        "accept": ["5 milliarden jahre", "5 milliarden", "5.000.000.000", "5000000000"]
     }
 ]
