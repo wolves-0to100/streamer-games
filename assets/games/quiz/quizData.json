@@ -1,330 +1,383 @@
 [
-    {
-        "question": "In welchem ​​Jahr ist die Titanic am 15. April auf ihrer Jungfernfahrt von Southampton im Atlantik gesunken?",
-        "answer": "1912",
-        "accept": ["1912"]
-    },
-    {
-        "question": "Wie heißt das größte Technologieunternehmen in Südkorea?",
-        "answer": "Samsung",
-        "accept": ["samsung"]
-    },
-    {
-        "question": "Was ist die Hauptstadt von Portugal?",
-        "answer": "Lissabon",
-        "accept": ["lissabon"]
-    },
-    {
-        "question": "Was ist das chemische Symbol für Silber?",
-        "answer": "Ag",
-        "accept": ["ag"]
-    },
-    {
-        "question": "Was ist der kleinste Vogel der Welt?",
-        "answer": "Bienen-Kolibri",
-        "accept": ["bienen-Kkolibri", "bienen kolibri", "bienenkolibri"]
-    },
-    {
-        "question": "Was ist die Lebensdauer einer Libelle? (Mit Einheit)",
-        "answer": "24 Stunden",
-        "accept": ["24 stunden", "24h", "24 h"]
-    },
-    {
-        "question": "Wer hat 1810 die Blechdose zur Konservierung von Lebensmitteln erfunden?",
-        "answer": "Peter Durand",
-        "accept": ["peter durand"]
-    },
-    {
-        "question": "Was ist die Puppe, Barbies, vollständiger Name?",
-        "answer": "Barbara Millicent Roberts",
-        "accept": ["barbara millicent roberts"]
-    },
-    {
-        "question": "In welchem ​​Jahr wurde The Godfather zum ersten Mal veröffentlicht?",
-        "answer": "1972",
-        "accept": ["1972"]
-    },
-    {
-        "question": "Welcher Schauspieler gewann den Oscar für den besten Schauspieler für die Filme Philadelphia (1993) und Forrest Gump (1994)?",
-        "answer": "Tom Hanks",
-        "accept": ["tom hanks"]
-    },
-    {
-        "question": "Welches Land hat das Synchronschwimmen bei den Olympischen Sommerspielen mit fünf Goldmedaillen seit seiner Wiedereinführung in die Spiele im Jahr 2000 dominiert?",
-        "answer": "Russland",
-        "accept": ["russland"]
-    },
-    {
-        "question": "Der Kanadier Connor McDavid ist ein aufstrebender Star in welchem ​​Sport?",
-        "answer": "Eishockey",
-        "accept": ["eishockey"]
-    },{
-        "question": "Wie viele Spieler gibt es in einem Wasserballteam?",
-        "answer": "Sieben",
-        "accept": ["sieben", "7"]
-    },{
-        "question": "Wer hat einen Hammer und eine Feder auf den Mond fallen lassen, um zu demonstrieren, dass sie ohne Luft gleich schnell fallen?",
-        "answer": "David R. Scott",
-        "accept": ["david r. scott", "david scott", "david randolph scott"]
-    },{
-        "question": "Wie viele Herzen hat ein Oktopus?",
-        "answer": "Drei",
-        "accept": ["drei", "3"]
-    },{
-        "question": "In welchem ​​Jahr wurde das Produkt WD40 vom Chemiker Norm Larsen erfunden?",
-        "answer": "1953",
-        "accept": ["1953"]
-    }
+	{
+		"question": "In welchem ​​Jahr ist die Titanic am 15. April auf ihrer Jungfernfahrt von Southampton im Atlantik gesunken?",
+		"answer": "1912",
+		"accept": ["1912"]
+	},
+	{
+		"question": "Wie heißt das größte Technologieunternehmen in Südkorea?",
+		"answer": "Samsung",
+		"accept": ["samsung"]
+	},
+	{
+		"question": "Was ist die Hauptstadt von Portugal?",
+		"answer": "Lissabon",
+		"accept": ["lissabon"]
+	},
+	{
+		"question": "Was ist das chemische Symbol für Silber?",
+		"answer": "Ag",
+		"accept": ["ag"]
+	},
+	{
+		"question": "Was ist der kleinste Vogel der Welt?",
+		"answer": "Bienen-Kolibri",
+		"accept": ["bienen-Kkolibri", "bienen kolibri", "bienenkolibri"]
+	},
+	{
+		"question": "Was ist die Lebensdauer einer Libelle? (Mit Einheit)",
+		"answer": "24 Stunden",
+		"accept": ["24 stunden", "24h", "24 h"]
+	},
+	{
+		"question": "Wer hat 1810 die Blechdose zur Konservierung von Lebensmitteln erfunden?",
+		"answer": "Peter Durand",
+		"accept": ["peter durand"]
+	},
+	{
+		"question": "Was ist die Puppe, Barbies, vollständiger Name?",
+		"answer": "Barbara Millicent Roberts",
+		"accept": ["barbara millicent roberts"]
+	},
+	{
+		"question": "In welchem ​​Jahr wurde The Godfather zum ersten Mal veröffentlicht?",
+		"answer": "1972",
+		"accept": ["1972"]
+	},
+	{
+		"question": "Welcher Schauspieler gewann den Oscar für den besten Schauspieler für die Filme Philadelphia (1993) und Forrest Gump (1994)?",
+		"answer": "Tom Hanks",
+		"accept": ["tom hanks"]
+	},
+	{
+		"question": "Welches Land hat das Synchronschwimmen bei den Olympischen Sommerspielen mit fünf Goldmedaillen seit seiner Wiedereinführung in die Spiele im Jahr 2000 dominiert?",
+		"answer": "Russland",
+		"accept": ["russland"]
+	},
+	{
+		"question": "Der Kanadier Connor McDavid ist ein aufstrebender Star in welchem ​​Sport?",
+		"answer": "Eishockey",
+		"accept": ["eishockey"]
+	},
+	{
+		"question": "Wie viele Spieler gibt es in einem Wasserballteam?",
+		"answer": "Sieben",
+		"accept": ["sieben", "7"]
+	},
+	{
+		"question": "Wer hat einen Hammer und eine Feder auf den Mond fallen lassen, um zu demonstrieren, dass sie ohne Luft gleich schnell fallen?",
+		"answer": "David R. Scott",
+		"accept": ["david r. scott", "david scott", "david randolph scott"]
+	},
+	{
+		"question": "Wie viele Herzen hat ein Oktopus?",
+		"answer": "Drei",
+		"accept": ["drei", "3"]
+	},
+	{
+		"question": "In welchem ​​Jahr wurde das Produkt WD40 vom Chemiker Norm Larsen erfunden?",
+		"answer": "1953",
+		"accept": ["1953"]
+	},
 
-    ,{
-        "question": "Wie viele Haare hat ein typischer menschlicher Kopf auf die nächsten tausend?",
-        "answer": "10.000 Haare",
-        "accept": ["10,000 haare", "10.000 haare", "10000 Haare", "10000", "10,000", "10.000"]
-    }
-    ,{
-        "question": "Wer hat das Grammophon erfunden?",
-        "answer": "Emile Berliner",
-        "accept": ["emile berliner"]
-    }
-    ,{
-        "question": "Wie viele Jahre wird es dauern, bis ein von der Erde abgefeuertes Raumschiff den Planeten Pluto erreicht?",
-        "answer": "9,5",
-        "accept": ["neuneinhalb", "9,5", "9.5"]
-    },{
-        "question": "1930 erhielten Albert Einstein und ein Kollege das US-Patent 1781541. Wofür war es?",
-        "answer": "Kühlschrank",
-        "accept": ["kühlschrank"]
-    },{
-        "question": "Wie viel Prozent der Masse des Sonnensystems befindet sich in der Sonne auf 1 Prozent genau?",
-        "answer": "99",
-        "accept": ["99", "99%", "99 %", "99 Prozent"]
-    },{
-        "question": "Was ist die durchschnittliche Oberflächentemperatur auf der Venus? (In °C)",
-        "answer": "460",
-        "accept": ["460", "460°C", "460 Grad"]
-    },{
-        "question": "Welche amerikanische Popgruppe der 1960er Jahre hat den 'Surfin Sound' kreiert?",
-        "answer": "Beach Boys",
-        "accept": ["beach boys"]
-    },
-    {
-        "question": "Wie viele Elektronen befinden sich höchstens auf der innersten Schale eines Atoms?",
-        "answer": "2",
-        "accept": ["2", "zwei"]
-    },
-    {
-        "question": "In welchem ​​Jahr gingen die Beatles zum ersten Mal in die USA?",
-        "answer": "1964",
-        "accept": ["1964"]
-    },
-    {
-        "question": "Welcher amerikanische Popstar hatte 2015 mit den Singles 'Sorry' und 'Love Yourself' hintereinander Chart-Erfolge?",
-        "answer": "Justin Bieber",
-        "accept": ["justin bieber"]
-    },
-    {
-        "question": "In welchem Land steht die Pyramide von Gizeh und die Große Sphinx?",
-        "answer": "Ägypten",
-        "accept": ["ägypten", "aegypten"]
-    },
-    {
-        "question": "Wie heißt die erste Schrift, die in Japan unterrichtet wird?",
-        "answer": "Hiragana",
-        "accept": ["hiragana"]
-    },
-    {
-        "question": "Wie heißt der Leader der Gruppe BTS?",
-        "answer": "Kim Namjoo oder RM",
-        "accept": ["rm", "namjoon", "kim namjoon"]
-    },
-    {
-        "question": "Wie heiß ist die Oberfläche der Sonne? (In °C)",
-        "answer": "ca. 6.000 °C",
-        "accept": ["6000", "6.000", "6,000", "6000 grad", "6.000 grad"]
-    },
-    {
-        "question": "Wie heißt die Hauptstadt Spaniens?",
-        "answer": "Madrid",
-        "accept": ["madrid"]
-    },
-    {
-        "question": "Wie weit ist der Mond von der Erde entfernt? (In km)",
-        "answer": "384.400 km",
-        "accept": ["384400", "384.400", "384,400", "384400km", "384.400km", "384,400km", "384400 km", "384.400 km", "384,400 km"]
-    },
-    {
-        "question": "Welches Gebirge stellt einen Teil der asiatisch-europäischen Grenze dar?",
-        "answer": "Ural",
-        "accept": ["ural", "ural gebirge"]
-    },
-    {
-        "question": "Wie hieß das Buch, welches als Buchvorlage für den Film 'Jurassic Park' diente (1993)?",
-        "answer": "DinoPark",
-        "accept": ["dinopark"]
-    },
-    {
-        "question": "Wie heißt die ungarische Währung?",
-        "answer": "Forint",
-        "accept": ["forint"]
-    },
-    {
-        "question": "Wer wählt in Deutschland den Bundespräsidenten?",
-        "answer": "Die Bundesversammlung",
-        "accept": ["bundesversammlung", "die bundesversammlung"]
-    },
-    {
-        "question": "Wo steht die Porta Nigra?",
-        "answer": "Trier",
-        "accept": ["trier", "in trier"]
-    },
-    {
-        "question": "Unter welchem Namen kennt man Schnittlauch noch?",
-        "answer": "Jakobszwiebel",
-        "accept": ["jakobszwiebel", "jakobszwiebeln"]
-    },
-    {
-        "question": "Die größte Insel der Welt heißt?",
-        "answer": "Grönland",
-        "accept": ["grönland", "groenland"]
-    },
-    {
-        "question": "In welchem Jahr war der Reichstagsbrand?",
-        "answer": "1933",
-        "accept": ["1933"]
-    },
-    {
-        "question": "Was ist das Plural von Maximum?",
-        "answer": "Maxima",
-        "accept": ["maxima"]
-    },
-    {
-        "question": "Wo liegen die Everglades? (Bundesstaat)",
-        "answer": "Florida",
-        "accept": ["florida"]
-    },
-    {
-        "question": "Wer sang 1991 'Das ganze Leben ist ein Quiz'?",
-        "answer": "Hape Kerkeling",
-        "accept": ["hape kerkeling"]
-    },
-    {
-        "question": "Wo kann man die berühmte Terrakotta-Armee bestaunen? (Land)",
-        "answer": "China",
-        "accept": ["china"]
-    },
-    {
-        "question": "Welchen Namen trägt die erste Raumstation der Welt?",
-        "answer": "Saljut 1",
-        "accept": ["saljut 1", "saljut"]
-    },
-    {
-        "question": "Wie lang ist der Große Afrikanische Grabenbruch? (auf 1.000km gerundet)",
-        "answer": "6.000 Kilometer",
-        "accept": ["6.000 kilometer", "6000 kilometer", "6.000km", "6000km", "6000 km", "6.000 km", "6.000", "6000"]
-    },
-    {
-        "question": "Welcher Verein verfügt über die meisten Titelgewinne in der UEFA Champions League? (Stand: 2019, Statista)",
-        "answer": "Real Madrid",
-        "accept": ["real madrid", "6000 kilometer"]
-    },
-    {
-        "question": "'Am Rande der kleinen, kleinen Stadt lag ein alter, verwahrloster Garten.' Welches Kinderbuch beginnt mit diesem Satz?",
-        "answer": "Pippi Langstrumpf",
-        "accept": ["pippi langstrumpf"]
-    },
-    {
-        "question": "Wann kam die erste Antibabypille in den USA auf dem Markt? (Jahr)",
-        "answer": "1960",
-        "accept": ["1960"]
-    },
-    {
-        "question": "Wasserstoff ist ein chemisches Element mit dem Symbol?",
-        "answer": "H",
-        "accept": ["h"]
-    },
-    {
-        "question": "Welche Temperatur herrscht etwa im inneren Erdkern?",
-        "answer": "mehr als 5.000 °C",
-        "accept": ["5.000", "5000", "5.000 Grad", "5000 Grad", "5.000 °C", "5000 °C", "5.000°C", "5000°C"]
-    },
-    {
-        "question": "Wie viele Menschen gelten weltweit als hochbegabt, haben also einen IQ von mindestens 130? (in Prozent)",
-        "answer": "etwa 2 Prozent",
-        "accept": ["2", "2%", "2 %", "2 Prozent"]
-    },
-    {
-        "question": "Welches Element steht an erster Stelle im Periodensystem?",
-        "answer": "Wasserstoff",
-        "accept": ["wasserstoff", "h"]
-    },
-    {
-        "question": "Wie nennt man den Punkt im Auge, der auch als schärfste Stelle des Sehens bekannt ist?",
-        "answer": "Gelber Fleck",
-        "accept": ["gelber fleck"]
-    },
-    {
-        "question": "Wann ereignete sich die Kubakrise?",
-        "answer": "1962",
-        "accept": ["1962"]
-    },
-    {
-        "question": "In Kombination mit welchem Vitamin wird Eisen besonders gut vom menschlichen Körper aufgenommen?",
-        "answer": "Vitamin C",
-        "accept": ["vitamin c", "c"]
-    },
-    {
-        "question": "Was ist die Amtssprache Brasiliens?",
-        "answer": "Portugiesisch",
-        "accept": ["portugiesisch"]
-    },
-    {
-        "question": "Welches Land hat für gleichgeschlechtliche Paare als erstes Land der Welt die 'Registrierte Partnerschaft' eingeführt?",
-        "answer": "Dänemark",
-        "accept": ["dänemark", "daenemark"]
-    },
-    {
-        "question": "Europas wasserreichster Fluss heißt?",
-        "answer": "Wolga",
-        "accept": ["wolga"]
-    },
-    {
-        "question": "Wer gilt als der bisher erfolgreichster Olympionike? (Stand: Februar, 2021)",
-        "answer": "Michael Phelps",
-        "accept": ["michael phelps", "phelps"]
-    },
-    {
-        "question": "Wann fand die erste Berlinale statt?",
-        "answer": "1951",
-        "accept": ["1951"]
-    },
-    {
-        "question": "Der westlichste Punkt des kontinentalen Europas liegt in? (Gesucht ist ein Land)",
-        "answer": "Portugal (Cabo da Roca)",
-        "accept": ["portugal"]
-    },
-    {
-        "question": "Wann legalisierte Kanada den Konsum von Cannabis für Erwachsene?",
-        "answer": "2018",
-        "accept": ["2018"]
-    },
-    {
-        "question": "Wann entdeckte Christoph Kolumbus Amerika?",
-        "answer": "1492",
-        "accept": ["1492"]
-    },
-    {
-        "question": "Welches ist das leichteste Element im Periodensystem?",
-        "answer": "Wasserstoff",
-        "accept": ["wasserstoff", "h"]
-    },
-    {
-        "question": "Der Marianengraben ist der tiefste Tiefseegraben des Weltmeeres. Doch wie viele Gräben weltweit haben eine Tiefe von mehr als 10.000 Metern?",
-        "answer": "6",
-        "accept": ["6"]
-    },
-    {
-        "question": "In welchem Jahr kam das erste iPhone auf den Markt?",
-        "answer": "2007",
-        "accept": ["2007"]
-    }
+	{
+		"question": "Wie viele Haare hat ein typischer menschlicher Kopf auf die nächsten tausend?",
+		"answer": "10.000 Haare",
+		"accept": ["10,000 haare", "10.000 haare", "10000 Haare", "10000", "10,000", "10.000"]
+	},
+	{
+		"question": "Wer hat das Grammophon erfunden?",
+		"answer": "Emile Berliner",
+		"accept": ["emile berliner"]
+	},
+	{
+		"question": "Wie viele Jahre wird es dauern, bis ein von der Erde abgefeuertes Raumschiff den Planeten Pluto erreicht?",
+		"answer": "9,5",
+		"accept": ["neuneinhalb", "9,5", "9.5"]
+	},
+	{
+		"question": "1930 erhielten Albert Einstein und ein Kollege das US-Patent 1781541. Wofür war es?",
+		"answer": "Kühlschrank",
+		"accept": ["kühlschrank"]
+	},
+	{
+		"question": "Wie viel Prozent der Masse des Sonnensystems befindet sich in der Sonne auf 1 Prozent genau?",
+		"answer": "99",
+		"accept": ["99", "99%", "99 %", "99 Prozent"]
+	},
+	{
+		"question": "Was ist die durchschnittliche Oberflächentemperatur auf der Venus? (In °C)",
+		"answer": "460",
+		"accept": ["460", "460°C", "460 Grad"]
+	},
+	{
+		"question": "Welche amerikanische Popgruppe der 1960er Jahre hat den 'Surfin Sound' kreiert?",
+		"answer": "Beach Boys",
+		"accept": ["beach boys"]
+	},
+	{
+		"question": "Wie viele Elektronen befinden sich höchstens auf der innersten Schale eines Atoms?",
+		"answer": "2",
+		"accept": ["2", "zwei"]
+	},
+	{
+		"question": "In welchem ​​Jahr gingen die Beatles zum ersten Mal in die USA?",
+		"answer": "1964",
+		"accept": ["1964"]
+	},
+	{
+		"question": "Welcher amerikanische Popstar hatte 2015 mit den Singles 'Sorry' und 'Love Yourself' hintereinander Chart-Erfolge?",
+		"answer": "Justin Bieber",
+		"accept": ["justin bieber"]
+	},
+	{
+		"question": "In welchem Land steht die Pyramide von Gizeh und die Große Sphinx?",
+		"answer": "Ägypten",
+		"accept": ["ägypten", "aegypten"]
+	},
+	{
+		"question": "Wie heißt die erste Schrift, die in Japan unterrichtet wird?",
+		"answer": "Hiragana",
+		"accept": ["hiragana"]
+	},
+	{
+		"question": "Wie heißt der Leader der Gruppe BTS?",
+		"answer": "Kim Namjoo oder RM",
+		"accept": ["rm", "namjoon", "kim namjoon"]
+	},
+	{
+		"question": "Wie heiß ist die Oberfläche der Sonne? (In °C)",
+		"answer": "ca. 6.000 °C",
+		"accept": ["6000", "6.000", "6,000", "6000 grad", "6.000 grad"]
+	},
+	{
+		"question": "Wie heißt die Hauptstadt Spaniens?",
+		"answer": "Madrid",
+		"accept": ["madrid"]
+	},
+	{
+		"question": "Wie weit ist der Mond von der Erde entfernt? (In km)",
+		"answer": "384.400 km",
+		"accept": [
+			"384400",
+			"384.400",
+			"384,400",
+			"384400km",
+			"384.400km",
+			"384,400km",
+			"384400 km",
+			"384.400 km",
+			"384,400 km"
+		]
+	},
+	{
+		"question": "Welches Gebirge stellt einen Teil der asiatisch-europäischen Grenze dar?",
+		"answer": "Ural",
+		"accept": ["ural", "ural gebirge"]
+	},
+	{
+		"question": "Wie hieß das Buch, welches als Buchvorlage für den Film 'Jurassic Park' diente (1993)?",
+		"answer": "DinoPark",
+		"accept": ["dinopark"]
+	},
+	{
+		"question": "Wie heißt die ungarische Währung?",
+		"answer": "Forint",
+		"accept": ["forint"]
+	},
+	{
+		"question": "Wer wählt in Deutschland den Bundespräsidenten?",
+		"answer": "Die Bundesversammlung",
+		"accept": ["bundesversammlung", "die bundesversammlung"]
+	},
+	{
+		"question": "Wo steht die Porta Nigra?",
+		"answer": "Trier",
+		"accept": ["trier", "in trier"]
+	},
+	{
+		"question": "Unter welchem Namen kennt man Schnittlauch noch?",
+		"answer": "Jakobszwiebel",
+		"accept": ["jakobszwiebel", "jakobszwiebeln"]
+	},
+	{
+		"question": "Die größte Insel der Welt heißt?",
+		"answer": "Grönland",
+		"accept": ["grönland", "groenland"]
+	},
+	{
+		"question": "In welchem Jahr war der Reichstagsbrand?",
+		"answer": "1933",
+		"accept": ["1933"]
+	},
+	{
+		"question": "Was ist das Plural von Maximum?",
+		"answer": "Maxima",
+		"accept": ["maxima"]
+	},
+	{
+		"question": "Wo liegen die Everglades? (Bundesstaat)",
+		"answer": "Florida",
+		"accept": ["florida"]
+	},
+	{
+		"question": "Wer sang 1991 'Das ganze Leben ist ein Quiz'?",
+		"answer": "Hape Kerkeling",
+		"accept": ["hape kerkeling"]
+	},
+	{
+		"question": "Wo kann man die berühmte Terrakotta-Armee bestaunen? (Land)",
+		"answer": "China",
+		"accept": ["china"]
+	},
+	{
+		"question": "Welchen Namen trägt die erste Raumstation der Welt?",
+		"answer": "Saljut 1",
+		"accept": ["saljut 1", "saljut"]
+	},
+	{
+		"question": "Wie lang ist der Große Afrikanische Grabenbruch? (auf 1.000km gerundet)",
+		"answer": "6.000 Kilometer",
+		"accept": ["6.000 kilometer", "6000 kilometer", "6.000km", "6000km", "6000 km", "6.000 km", "6.000", "6000"]
+	},
+	{
+		"question": "Welcher Verein verfügt über die meisten Titelgewinne in der UEFA Champions League? (Stand: 2019, Statista)",
+		"answer": "Real Madrid",
+		"accept": ["real madrid", "6000 kilometer"]
+	},
+	{
+		"question": "'Am Rande der kleinen, kleinen Stadt lag ein alter, verwahrloster Garten.' Welches Kinderbuch beginnt mit diesem Satz?",
+		"answer": "Pippi Langstrumpf",
+		"accept": ["pippi langstrumpf"]
+	},
+	{
+		"question": "Wann kam die erste Antibabypille in den USA auf dem Markt? (Jahr)",
+		"answer": "1960",
+		"accept": ["1960"]
+	},
+	{
+		"question": "Wasserstoff ist ein chemisches Element mit dem Symbol?",
+		"answer": "H",
+		"accept": ["h"]
+	},
+	{
+		"question": "Welche Temperatur herrscht etwa im inneren Erdkern?",
+		"answer": "mehr als 5.000 °C",
+		"accept": ["5.000", "5000", "5.000 Grad", "5000 Grad", "5.000 °C", "5000 °C", "5.000°C", "5000°C"]
+	},
+	{
+		"question": "Wie viele Menschen gelten weltweit als hochbegabt, haben also einen IQ von mindestens 130? (in Prozent)",
+		"answer": "etwa 2 Prozent",
+		"accept": ["2", "2%", "2 %", "2 Prozent"]
+	},
+	{
+		"question": "Welches Element steht an erster Stelle im Periodensystem?",
+		"answer": "Wasserstoff",
+		"accept": ["wasserstoff", "h"]
+	},
+	{
+		"question": "Wie nennt man den Punkt im Auge, der auch als schärfste Stelle des Sehens bekannt ist?",
+		"answer": "Gelber Fleck",
+		"accept": ["gelber fleck"]
+	},
+	{
+		"question": "Wann ereignete sich die Kubakrise?",
+		"answer": "1962",
+		"accept": ["1962"]
+	},
+	{
+		"question": "In Kombination mit welchem Vitamin wird Eisen besonders gut vom menschlichen Körper aufgenommen?",
+		"answer": "Vitamin C",
+		"accept": ["vitamin c", "c"]
+	},
+	{
+		"question": "Was ist die Amtssprache Brasiliens?",
+		"answer": "Portugiesisch",
+		"accept": ["portugiesisch"]
+	},
+	{
+		"question": "Welches Land hat für gleichgeschlechtliche Paare als erstes Land der Welt die 'Registrierte Partnerschaft' eingeführt?",
+		"answer": "Dänemark",
+		"accept": ["dänemark", "daenemark"]
+	},
+	{
+		"question": "Europas wasserreichster Fluss heißt?",
+		"answer": "Wolga",
+		"accept": ["wolga"]
+	},
+	{
+		"question": "Wer gilt als der bisher erfolgreichster Olympionike? (Stand: Februar, 2021)",
+		"answer": "Michael Phelps",
+		"accept": ["michael phelps", "phelps"]
+	},
+	{
+		"question": "Wann fand die erste Berlinale statt?",
+		"answer": "1951",
+		"accept": ["1951"]
+	},
+	{
+		"question": "Der westlichste Punkt des kontinentalen Europas liegt in? (Gesucht ist ein Land)",
+		"answer": "Portugal (Cabo da Roca)",
+		"accept": ["portugal"]
+	},
+	{
+		"question": "Wann legalisierte Kanada den Konsum von Cannabis für Erwachsene?",
+		"answer": "2018",
+		"accept": ["2018"]
+	},
+	{
+		"question": "Wann entdeckte Christoph Kolumbus Amerika?",
+		"answer": "1492",
+		"accept": ["1492"]
+	},
+	{
+		"question": "Der Marianengraben ist der tiefste Tiefseegraben des Weltmeeres. Doch wie viele Gräben weltweit haben eine Tiefe von mehr als 10.000 Metern?",
+		"answer": "6",
+		"accept": ["6"]
+	},
+	{
+		"question": "In welchem Jahr kam das erste iPhone auf den Markt?",
+		"answer": "2007",
+		"accept": ["2007"]
+	},
+	{
+		"question": "Wie viele Richter beschäftigt der Supreme Court of the United States, also der Oberste Gerichtshof der Vereinigten Staaten von Amerika? (Stand: Januar, 2021)",
+		"answer": "9",
+		"accept": ["neun", "9"]
+	},
+	{
+		"question": "Wie lautet das englische Wort für Schere?",
+		"answer": "Scissors",
+		"accept": ["scissors"]
+	},
+	{
+		"question": "Welches ist das größte eierlegende Säugetier?",
+		"answer": "Schnabeltier",
+		"accept": ["schnabeltier"]
+	},
+	{
+		"question": "Von welchem Politiker stammt das folgende Zitat: 'Ich vertrete einen traditionellen Ehebegriff: die Vereinigung von Mann und Frau. Dazu stehe ich, und solche Positionen muss meine Partei aushalten.'",
+		"answer": "Annegret Kramp-Karrenbauer",
+		"accept": ["annegret kramp-karrenbauer", "kramp-karrenbauer", "akk"]
+	},
+	{
+		"question": "Wie lange wird die Sonne in etwa noch leuchten? (In Jahren)",
+		"answer": "5 Milliarden Jahre",
+		"accept": ["5 milliarden jahre", "5 milliarden", "5.000.000.000", "5000000000"]
+	},
+	{
+		"question": "Der webbasierte Instant-Messaging-Dienst 'Slack' ist gerade für den Home-Office-Gebrauch von hoher Bedeutung. Wann erschien eine erste Version?",
+		"answer": "2013",
+		"accept": ["2013"]
+	},
+	{
+		"question": "Welches Land verfügt über die meisten Zeitzonen?",
+		"answer": "Frankreich",
+		"accept": ["frankreich"]
+	},
+	{
+		"question": "7,2 Millionen Dollar kostete den USA der Kauf von Alaska. Wann wurde dieser Kauf vollzogen?",
+		"answer": "1867",
+		"accept": ["1867"]
+	}
 ]
