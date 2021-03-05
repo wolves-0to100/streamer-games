@@ -19,9 +19,11 @@
 		<div v-else class="game">
 			<h2>
 				<span>Ländername: </span>
-				<span v-if="soulutionsShown">{{ currentCountry[answerType] }}</span>
-				<span v-if="answerType === 'code'"> (currentCountry.de)</span>
-				<span v-else>?</span>
+				<span v-if="soulutionsShown && answerType !== 'code'">{{ currentCountry[answerType] }}</span>
+				<span v-if="answerType === 'code' && soulutionsShown">
+					{{ currentCountry.code }}, {{ currentCountry.de }}
+				</span>
+				<span v-if="!soulutionsShown">?</span>
 			</h2>
 
 			<div class="imageWrapper">

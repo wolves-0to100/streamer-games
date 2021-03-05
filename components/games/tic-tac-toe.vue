@@ -207,13 +207,13 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: black;
 	text-align: center;
 	p {
 		font-size: 28px;
 		color: #bababa;
 		span {
-			color: white;
+			color: black;
 			&.active {
 				color: #d90000;
 			}
@@ -232,7 +232,7 @@ h1 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border: 2px solid white;
+		border: 2px solid black;
 	}
 	p {
 		font-size: 18px;
@@ -259,5 +259,22 @@ h1 {
 .number {
 	margin: 4px;
 	opacity: 0.6;
+}
+
+.dark-mode {
+	#ttt {
+		color: white;
+		p {
+			span {
+				color: white;
+			}
+		}
+	}
+
+	#board {
+		div {
+			border: 2px solid white;
+		}
+	}
 }
 </style>
