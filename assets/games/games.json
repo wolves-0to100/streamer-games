@@ -22,5 +22,11 @@
 		"slug": "capital-quiz",
 		"description": "Kennst du alle Hauptstädte? Finde es jetzt herraus.",
 		"maxPlayer": null
+	},
+	{
+		"name": "Einwohner",
+		"slug": "population-guess",
+		"description": "Versuche die Einwohner einer Stadt zu schätzen.",
+		"maxPlayer": null
 	}
 ]
