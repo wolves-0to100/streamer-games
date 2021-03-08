@@ -379,5 +379,60 @@
 		"question": "7,2 Millionen Dollar kostete den USA der Kauf von Alaska. Wann wurde dieser Kauf vollzogen?",
 		"answer": "1867",
 		"accept": ["1867"]
+	},
+	{
+		"question": "Wie heißt der stärkste Nerv im menschlichen Körper?",
+		"answer": "Ischiasnerv",
+		"accept": ["ischiasnerv", "ischias"]
+	},
+	{
+		"question": "Wo steht der Zuckerhut (Fels)?",
+		"answer": "Rio de Janeiro",
+		"accept": ["rio de janeiro", "rio"]
+	},
+	{
+		"question": "Dolly war das erste Tier, das durch ein Klonierungsverfahren gezeugt wurde. Wie alt wurde Dolly? (In Jahren)",
+		"answer": "6 Jahre",
+		"accept": ["6 jahre", "6", "sechs"]
+	},
+	{
+		"question": "In welchem Jahr ereignete sich der Kniefall von Warschau?",
+		"answer": "7. Dezember 1970",
+		"accept": ["1970", "7. dezember 1970"]
+	},
+	{
+		"question": "Bei der Division gilt: Dividend durch Divisor gleich?",
+		"answer": "Quotient",
+		"accept": ["quotient"]
+	},
+	{
+		"question": "In welchem deutschen Bundesland befindet sich das Neandertal?",
+		"answer": "Nordrhein-Westfalen",
+		"accept": ["nordrhein-westfalen", "nordrhein westfalen", "nrw"]
+	},
+	{
+		"question": "Gregor Mendel entdeckte grundlegende Gesetze der Vererbung. Was nutzte er in seinen ersten Experimenten?",
+		"answer": "Erbsenpflanzen",
+		"accept": ["erbsenpflanzen", "erbsen"]
+	},
+	{
+		"question": "Wie viele ordentliche Mitglieder sitzen im Bundesrat?",
+		"answer": "69",
+		"accept": ["69"]
+	},
+	{
+		"question": "Wie viele ordentliche Mitglieder sitzen im Bundesrat?",
+		"answer": "69",
+		"accept": ["69"]
+	},
+	{
+		"question": "Der Jupiter hat einen runden, roten Fleck, den man mit einem Teleskop beobachten kann. Was ist das?",
+		"answer": "Wirbelsturm",
+		"accept": ["wirbelsturm"]
+	},
+	{
+		"question": "Wie heißt der zweitgrößte Berg der Erde?",
+		"answer": "K2",
+		"accept": ["k2"]
 	}
 ]
