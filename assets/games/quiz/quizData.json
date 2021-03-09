@@ -434,5 +434,55 @@
 		"question": "Wie heißt der zweitgrößte Berg der Erde?",
 		"answer": "K2",
 		"accept": ["k2"]
+	},
+	{
+		"question": "Was ist die heiligste Stadt des Islam?",
+		"answer": "Mekka",
+		"accept": ["mekka", "mecca"]
+	},
+	{
+		"question": "Wer war in der römischen Mythologie der Gott des Krieges?",
+		"answer": "Mars",
+		"accept": ["mars"]
+	},
+	{
+		"question": "Wie nennen die Internethändler den Montag nach dem Black Friday?",
+		"answer": "Cyber Monday",
+		"accept": ["cyber monday", "cybermonday"]
+	},
+	{
+		"question": "Wie heißt der höchste Berg in Afrika?",
+		"answer": "Kilimanjaro",
+		"accept": ["kilimanjaro"]
+	},
+	{
+		"question": "Wie lautet Eminems richtiger Name?",
+		"answer": "Marshall Mathers",
+		"accept": ["marshall mathers", "marshall"]
+	},
+	{
+		"question": "Sushi wird oft in Nori eingewickelt. Wovon ist Nori eine Art?",
+		"answer": "Seegras",
+		"accept": ["seegras", "seaweed"]
+	},
+	{
+		"question": "Wer hat 'Poker Face' gesungen?",
+		"answer": "Lady Gaga",
+		"accept": ["lady gaga"]
+	},
+	{
+		"question": "In welcher Stadt finden Sie das höchste Gebäude der Welt?",
+		"answer": "Dubai",
+		"accept": ["dubai"]
+	},
+	{
+		"question": "Wer war der erste römische Kaiser?",
+		"answer": "Augustus",
+		"accept": ["augustus"]
+	},
+	{
+		"question": "Wer ist der Leadsänger von The Rolling Stones?",
+		"answer": "Mick Jagger",
+		"accept": ["mick jagger"]
 	}
 ]
