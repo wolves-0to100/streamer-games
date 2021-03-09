@@ -6,7 +6,10 @@
 				{{ player.displayName }} <span>{{ player.score }}</span>
 			</p>
 		</div>
-		<p class="info">Um mitzuspielen tippe <b>!join</b> in den Chat.</p>
+		<p class="info">
+			Aktuell spielen <b>{{ playersByScore.length }}</b> Zuschauer mit.<br />
+			Um mitzuspielen tippe <b>!join</b> in den Chat.
+		</p>
 	</CardItem>
 </template>
 
