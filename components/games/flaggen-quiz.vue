@@ -72,6 +72,7 @@ export default {
 	watch: {
 		isStarted() {
 			if (this.isStarted) {
+				if (!this.answerType) this.answerType = 'de';
 				this.answered = [];
 				this.soulutionsShown = false;
 				this.currentCountry = this.leftCountries.pop();
