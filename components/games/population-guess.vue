@@ -6,9 +6,13 @@
 				Versuche die Einwohner einer Stadt zu schätzen. Wer am dichtesten dran ist bekommt die meisten Punkte.
 				Schreibe deine Antwort als Zahl in den Chat.
 			</p>
+			<div v-if="!isSelected">
+				<button @click="setCities(true)">Hauptstädte</button>
+				<button @click="setCities(false)">Alle Städte</button>
+			</div>
 		</div>
 		<div v-else class="game">
-			<h2>Wie viele Menschen leben in {{ currentCity.city }}, {{ currentCity.country }}</h2>
+			<h2>Wie viele Menschen leben in {{ currentCity.city }}, {{ currentCity.country }}?</h2>
 
 			<p v-if="soulutionShown">In {{ currentCity.city }} wohnen {{ currentCity.population }}</p>
 
@@ -39,6 +43,7 @@ export default {
 			countdown: 16,
 			interval: null,
 			answered: [],
+			isSelected: false,
 		};
 	},
 	computed: {
@@ -58,6 +63,8 @@ export default {
 				this.currentCity = this.leftCities.pop();
 				this.countdown = 16;
 				this.startCountdown();
+			} else {
+				this.isSelected = false;
 			}
 		},
 	},
@@ -88,6 +95,15 @@ export default {
 		});
 	},
 	methods: {
+		setCities(capitales) {
+			if (capitales) {
+				const filteredCities = cities.filter((c) => c.capital === 'primary');
+				this.leftCities = this.shuffleArray([...filteredCities]);
+			} else {
+				this.leftCities = this.shuffleArray([...cities]);
+			}
+			this.isSelected = true;
+		},
 		stopCountdown() {
 			clearInterval(this.interval);
 			this.interval = null;
