@@ -484,5 +484,65 @@
 		"question": "Wer ist der Leadsänger von The Rolling Stones?",
 		"answer": "Mick Jagger",
 		"accept": ["mick jagger"]
+	},
+	{
+		"question": "In welcher Stadt fanden 1896 die ersten Olympischen Spiele der Neuzeit statt?",
+		"answer": "Athen",
+		"accept": ["athen"]
+	},
+	{
+		"question": "Wenn Sie am 1. August geboren sind, was ist Ihr Sternzeichen?",
+		"answer": "Löwe",
+		"accept": ["löwe", "loewe"]
+	},
+	{
+		"question": "Wie wurde Mumbai früher genannt?",
+		"answer": "Bombay",
+		"accept": ["bombay"]
+	},
+	{
+		"question": "Was ist das südlichste Land der Welt, ohne Berücksichtigung der Außengebiete?",
+		"answer": "Chile",
+		"accept": ["chile"]
+	},
+	{
+		"question": "Wer ist in 'Super Mario Brothers' der Feind von Mario?",
+		"answer": "Bowser",
+		"accept": ["bowser"]
+	},
+	{
+		"question": "Welche große Wüste findet man in China und der Mongolei?",
+		"answer": "Gobi",
+		"accept": ["gobi", "gobi wüste"]
+	},
+	{
+		"question": "In welcher Musikgruppe ist Will.I.Am Mitglied?",
+		"answer": "Black Eyed Peas",
+		"accept": ["black eyed peas"]
+	},
+	{
+		"question": "In welchem Land haben die Glückskekse ihren Ursprung?",
+		"answer": "Vereinigte Staaten",
+		"accept": ["usa", "vereinigte staaten", "vereinigte staaten von amerika"]
+	},
+	{
+		"question": "Was fressen Riesenpandas in erster Linie?",
+		"answer": "Bambus",
+		"accept": ["bambus"]
+	},
+	{
+		"question": "Welcher Film spielt auf dem Mond von Pandora?",
+		"answer": "Avatar",
+		"accept": ["avatar"]
+	},
+	{
+		"question": "Welches Land war früher als Ceylon bekannt?",
+		"answer": "Sri Lanka",
+		"accept": ["sri lanka"]
+	},
+	{
+		"question": "Was kommt zwischen Milli und Nano?",
+		"answer": "Mikro",
+		"accept": ["mikro", "micro"]
 	}
 ]
