@@ -28,5 +28,11 @@
 		"slug": "population-guess",
 		"description": "Versuche die Einwohner einer Stadt zu schätzen.",
 		"maxPlayer": null
+	},
+	{
+		"name": "Kartenparadies",
+		"slug": "city-by-location",
+		"description": "Nenne die Stadt, welche auf der Karte angezeigt wird.",
+		"maxPlayer": null
 	}
 ]
