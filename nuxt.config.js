@@ -15,7 +15,10 @@ export default {
 					'Wilkommen bei Streamer Games. Hier hast du die Möglichkeit mit deinem Twitch Chat Spiele zu spielen.',
 			},
 		],
-		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+		link: [
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{ href: 'https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css', rel: 'stylesheet' },
+		],
 		script: [
 			{
 				async: true,
