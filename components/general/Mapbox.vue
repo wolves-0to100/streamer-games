@@ -39,7 +39,7 @@ export default {
 			}
 		},
 		mapStyle() {
-			this.map.style = this.mapStyle;
+			this.map.setStyle(this.mapStyle);
 		},
 	},
 	mounted() {
@@ -50,6 +50,7 @@ export default {
 		});
 		this.marker = new mapbox.Marker();
 		this.marker.setLngLat(this.cords).addTo(this.map);
+		this.map.panTo(this.cords, { duration: 1000 }).zoomTo(1);
 	},
 };
 </script>

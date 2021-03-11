@@ -1,6 +1,6 @@
 <template>
 	<div class="gameContainer">
-		<h1>Kartenparadies</h1>
+		<h1>Stadtliche Frage</h1>
 		<div v-if="!currentCity" class="settings">
 			<p>
 				Auf der Karte wird dir ein Marker angezeigt. Nenne die Stadt auf welcher der Marker sitzt. Wenn du weißt
