@@ -39,7 +39,7 @@ export default {
 			}
 		},
 		mapStyle() {
-			this.map.style = this.mapStyle;
+			this.map.setStyle(this.mapStyle);
 		},
 	},
 	mounted() {
