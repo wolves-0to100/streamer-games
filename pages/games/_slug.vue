@@ -1,6 +1,6 @@
 <template>
 	<div class="page">
-		<component :is="currentGame" :is-started="gameIsStarted"></component>
+		<component :is="currentGame" :is-started="gameIsStarted" @toggle="toggleGameState"></component>
 		<aside>
 			<Scoreboard />
 			<div class="controls">
