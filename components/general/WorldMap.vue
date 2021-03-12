@@ -971,6 +971,9 @@ path {
 		stroke: #dddddd;
 		fill: #303030;
 	}
+	.current {
+		fill: #d90000;
+	}
 }
 
 .current {
