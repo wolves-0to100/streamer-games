@@ -34,5 +34,11 @@
 		"slug": "city-by-location",
 		"description": "Nenne die Stadt, welche auf der Karte angezeigt wird.",
 		"maxPlayer": null
+	},
+	{
+		"name": "Länder der Welt",
+		"slug": "country-by-location",
+		"description": "Nenne das Land, welche auf der Karte angezeigt wird.",
+		"maxPlayer": null
 	}
 ]
