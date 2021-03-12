@@ -13,6 +13,7 @@
 	"dependencies": {
 		"@nuxtjs/pwa": "^3.3.5",
 		"core-js": "^3.9.0",
+		"gsap": "^3.6.0",
 		"mapbox-gl": "^2.1.1",
 		"node-sass": "^5.0.0",
 		"nuxt": "^2.15.2",
