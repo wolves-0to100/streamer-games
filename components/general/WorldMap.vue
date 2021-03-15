@@ -951,7 +951,7 @@ export default {
 				attr: {
 					viewBox: `${x} ${y} ${width} ${height}`,
 				},
-				delay: selector ? 3 : 0,
+				delay: selector ? 2 : 0,
 			});
 		},
 	},
