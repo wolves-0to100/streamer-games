@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import DotLoader from '~/components/general/DotLoader.vue';
 import Scoreboard from '~/components/general/Scoreboard';
 
 export default {
@@ -28,7 +29,10 @@ export default {
 	},
 	computed: {
 		currentGame() {
-			return () => import(`~/components/games/${this.$route.params.slug}.vue`);
+			return () => ({
+				component: import(`~/components/games/${this.$route.params.slug}.vue`),
+				loading: DotLoader,
+			});
 		},
 	},
 	methods: {
