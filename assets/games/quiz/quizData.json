@@ -544,5 +544,70 @@
 		"question": "Was kommt zwischen Milli und Nano?",
 		"answer": "Mikro",
 		"accept": ["mikro", "micro"]
+	},
+	{
+		"question": "Welche Starbucks-Größe, größer als ein Grande, ist auch das italienische Wort für 'Zwanzig'?",
+		"answer": "Venti",
+		"accept": ["venti"]
+	},
+	{
+		"question": "Welcher Fluss fließt durch Paris?",
+		"answer": "Die Seine",
+		"accept": ["seine", "die seine"]
+	},
+	{
+		"question": "In welchem Jahr begann der kalifornische Goldrausch?",
+		"answer": "1848",
+		"accept": ["1848"]
+	},
+	{
+		"question": "Von welcher Insel kommen die Lemuren?",
+		"answer": "Madagascar",
+		"accept": ["madagascar"]
+	},
+	{
+		"question": "Wer hat Facebook gegründet?",
+		"answer": "Mark Zuckerberg",
+		"accept": ["mark zuckerberg", "zuckerberg"]
+	},
+	{
+		"question": "Was war das sowjetische Pendant zur CIA?",
+		"answer": "KGB",
+		"accept": ["kgb"]
+	},
+	{
+		"question": "Welches ist die größte Insel im Karibischen Meer?",
+		"answer": "Kuba",
+		"accept": ["cuba", "kuba"]
+	},
+	{
+		"question": "Was haben die Normannen 1066 erobert?",
+		"answer": "England",
+		"accept": ["england"]
+	},
+	{
+		"question": "In welchem Land würden Sie am ehesten einen Polder finden?",
+		"answer": "Niederlande",
+		"accept": ["niederlande"]
+	},
+	{
+		"question": "Welcher Film hat die Phrase 'Es kann nur einen geben' geprägt?",
+		"answer": "Highlander",
+		"accept": ["highlander"]
+	},
+	{
+		"question": "In welchem Land hat der Espresso seinen Ursprung?",
+		"answer": "Italien",
+		"accept": ["italien"]
+	},
+	{
+		"question": "Welches Element hat das Symbol Sn?",
+		"answer": "Zinn",
+		"accept": ["zinn"]
+	},
+	{
+		"question": "Was ist die höchste Baumart?",
+		"answer": "Küstenmammutbaum",
+		"accept": ["küstenmammutbaum", "kuestenmammutbaum"]
 	}
 ]
