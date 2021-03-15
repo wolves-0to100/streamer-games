@@ -22,7 +22,7 @@ export default {
 		},
 		size: {
 			type: String,
-			default: '60px',
+			default: '46px',
 		},
 		margin: {
 			type: String,
@@ -54,7 +54,12 @@ export default {
 </script>
 
 <style>
-.v-spinner .v-dot {
+.v-spinner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	width: 100%;
 }
 
 .v-spinner .v-dot1 {
@@ -65,35 +70,23 @@ export default {
 }
 
 .v-spinner .v-dot2 {
-	-webkit-animation: v-dotBounce 2s 0s infinite linear;
 	animation: v-dotBounce 2s 0s infinite linear;
-	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
-	position: 'absolute';
-	top: 0;
-	bottom: auto;
 }
 
 .v-spinner .v-dot3 {
-	-webkit-animation: v-dotBounce 2s -1s infinite linear;
 	animation: v-dotBounce 2s -1s infinite linear;
-	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
-	position: 'absolute';
-	top: auto;
-	bottom: 0;
 }
 
 @-webkit-keyframes v-dotRotate {
 	100% {
-		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
 }
 
 @keyframes v-dotRotate {
 	100% {
-		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
 }
@@ -101,11 +94,9 @@ export default {
 @-webkit-keyframes v-dotBounce {
 	0%,
 	100% {
-		-webkit-transform: scale(0);
 		transform: scale(0);
 	}
 	50% {
-		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 }
@@ -113,11 +104,9 @@ export default {
 @keyframes v-dotBounce {
 	0%,
 	100% {
-		-webkit-transform: scale(0);
 		transform: scale(0);
 	}
 	50% {
-		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 }
