@@ -17,7 +17,7 @@
 			<WorldMap :current-country="currentCountry.code" />
 
 			<p v-if="soulutionShown">
-				Das ist <b>{{ currentCountry.de }}</b>
+				Die Antwort ist: <b>{{ currentCountry.de }}</b>
 			</p>
 
 			<p v-if="correctGuesses && soulutionShown">Richtig geantwortet haben: {{ correctGuesses }}</p>
