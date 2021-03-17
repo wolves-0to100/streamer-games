@@ -40,5 +40,11 @@
 		"slug": "country-by-location",
 		"description": "Nenne das Land, welche auf der Karte angezeigt wird.",
 		"maxPlayer": null
+	},
+	{
+		"name": "Flughafenkürzel",
+		"slug": "iata-codes",
+		"description": "Nenne den IATA Code zu einem Flughafen.",
+		"maxPlayer": null
 	}
 ]
