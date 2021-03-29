@@ -609,5 +609,40 @@
 		"question": "Was ist die höchste Baumart?",
 		"answer": "Küstenmammutbaum",
 		"accept": ["küstenmammutbaum", "kuestenmammutbaum"]
+	},
+	{
+		"question": "Welche Religion hat die meisten Anhänger in Indien?",
+		"answer": "Hinduismus",
+		"accept": ["hinduismus", "hinduism"]
+	},
+	{
+		"question": "Als was ist Dwayne Johnson besser bekannt?",
+		"answer": "The Rock",
+		"accept": ["the rock"]
+	},
+	{
+		"question": "Welcher Riesenvogel ist auf dem Wappen von Australien abgebildet?",
+		"answer": "Emu",
+		"accept": ["emu"]
+	},
+	{
+		"question": "In welcher Buchreihe gibt es Charaktere namens Bella, Edward und Jacob?",
+		"answer": "Twilight",
+		"accept": ["twilight"]
+	},
+	{
+		"question": "Welches Geschenk wird traditionell zu einem 25. Hochzeitstag überreicht?",
+		"answer": "Silber",
+		"accept": ["silber"]
+	},
+	{
+		"question": "Wer war der erste deutsche Bundeskanzler?",
+		"answer": "Konrad Adenauer",
+		"accept": ["konrad adenauer", "adenauer"]
+	},
+	{
+		"question": "Was war in den USA während der Prohibitionszeit verboten?",
+		"answer": "Verkauf von Alkohol",
+		"accept": ["verkauf von alkohol", "alkohol"]
 	}
 ]
