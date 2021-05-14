@@ -6,7 +6,7 @@
 				Auf der Karte wird ein Land mit rot makiert. Nenne dieses Land und tippe den Namen in den Chat. Hier
 				hast du noch die Möglichkeit anzugeben in welcher Sprache du die Antwort geben möchtest.
 			</p>
-			<div v-if="!isSelected">
+			<div v-if="!isAnswerFormatSelected">
 				<button @click="setAnswerFormat('de')">Deutsch</button>
 				<button @click="setAnswerFormat('name')">Englisch</button>
 			</div>
@@ -55,7 +55,7 @@ export default {
 		return {
 			isSolutionShown: false,
 			isDone: false,
-			isSelected: false,
+			isAnswerFormatSelected: false,
 			leftCountries: [],
 			currentCountry: null,
 			countdown: 15,
@@ -114,7 +114,7 @@ export default {
 	methods: {
 		setAnswerFormat(answerFormat) {
 			this.answerFormat = answerFormat;
-			this.isSelected = true;
+			this.isAnswerFormatSelected = true;
 		},
 		stopCountdown() {
 			clearInterval(this.interval);
@@ -143,7 +143,7 @@ export default {
 		endGame() {
 			this.leftCountries = this.shuffleArray([...cities]);
 			this.isDone = true;
-			this.isSelected = false;
+			this.isAnswerFormatSelected = false;
 			this.$emit('toggle');
 		},
 		shuffleArray(arr) {
