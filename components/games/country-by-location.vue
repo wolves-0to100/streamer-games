@@ -16,11 +16,11 @@
 
 			<WorldMap :current-country="currentCountry.code" />
 
-			<p v-if="soulutionShown">
+			<p v-if="isSolutionShown">
 				Die Antwort ist: <b>{{ currentCountry.de }}</b>
 			</p>
 
-			<p v-if="correctGuesses && soulutionShown">Richtig geantwortet haben: {{ correctGuesses }}</p>
+			<p v-if="correctGuesses && isSolutionShown">Richtig geantwortet haben: {{ correctGuesses }}</p>
 			<p>T-00:{{ doubleDigitCountdown }}</p>
 		</div>
 		<div v-if="isDone">
@@ -53,15 +53,15 @@ export default {
 	},
 	data() {
 		return {
-			soulutionShown: false,
+			isSolutionShown: false,
+			isDone: false,
+			isSelected: false,
 			leftCountries: [],
 			currentCountry: null,
 			countdown: 15,
 			interval: null,
 			answered: [],
-			isSelected: false,
 			answerFormat: 'de',
-			isDone: false,
 		};
 	},
 	computed: {
@@ -78,7 +78,7 @@ export default {
 			if (this.isStarted) {
 				this.isDone = false;
 				this.answered = [];
-				this.soulutionShown = false;
+				this.isSolutionShown = false;
 				this.currentCountry = this.leftCountries.pop();
 				this.countdown = 15;
 				this.startCountdown();
@@ -98,7 +98,7 @@ export default {
 		client.connect();
 
 		client.on('message', (channel, tags, message, self) => {
-			if (this.interval && !this.soulutionShown) {
+			if (this.interval && !this.isSolutionShown) {
 				if (message.toLowerCase() === this.currentCountry[this.answerFormat].toLowerCase()) {
 					if (!this.answered.includes(tags['display-name'])) {
 						this.answered.push(tags['display-name']);
@@ -119,24 +119,19 @@ export default {
 		stopCountdown() {
 			clearInterval(this.interval);
 			this.interval = null;
-			if (!this.soulutionShown) {
-				this.soulutionShown = true;
-				this.countdown = 10;
-				this.startCountdown();
-			} else if (this.isStarted) {
+			this.resetCountdown();
+		},
+		resetCountdown() {
+			if (this.isSolutionShown) {
 				this.answered = [];
-				this.soulutionShown = false;
 				this.currentCountry = this.leftCountries.pop();
 				if (!this.currentCountry) {
-					this.leftCountries = this.shuffleArray([...cities]);
-					this.isDone = true;
-					this.isSelected = false;
-					this.$emit('toggle');
-					return;
+					this.endGame();
 				}
-				this.countdown = 15;
-				this.startCountdown();
 			}
+			this.isSolutionShown = !this.isSolutionShown;
+			this.countdown = this.isSolutionShown ? 10 : 15;
+			this.startCountdown();
 		},
 		startCountdown() {
 			if (!this.channelName) this.$router.push('/');
@@ -144,6 +139,12 @@ export default {
 				this.countdown--;
 				if (this.countdown <= 0) this.stopCountdown();
 			}, 1000);
+		},
+		endGame() {
+			this.leftCountries = this.shuffleArray([...cities]);
+			this.isDone = true;
+			this.isSelected = false;
+			this.$emit('toggle');
 		},
 		shuffleArray(arr) {
 			return arr.sort(() => Math.random() - 0.5);
