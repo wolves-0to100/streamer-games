@@ -21,10 +21,9 @@ export default {
 		],
 		script: [
 			{
-				async: true,
 				defer: true,
-				'data-website-id': 'e906376f-9add-44cb-af90-df7dc63b8ce2',
-				src: 'https://umami.wolves.ink/umami.js',
+				'data-cf-beacon': '{"token": "41df499de7a5468e9e4cca186648e8cd"}',
+				src: 'https://static.cloudflareinsights.com/beacon.min.js',
 			},
 		],
 		htmlAttrs: {
