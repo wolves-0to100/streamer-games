@@ -1,29 +1,29 @@
 default:
-  image: node:latest
+    image: node:lts
 
 stages:
-- build
-- deploy
+    - build
+    - deploy
 
 cache:
-  paths:
-  - node_modules/
+    paths:
+        - node_modules/
 
 build:
-  stage: build
-  only:
-  - master
-  script:
-  - npm install
-  - npm run generate
-  artifacts:
-    paths:
-    - dist/
+    stage: build
+    only:
+        - master
+    script:
+        - npm install
+        - npm run generate
+    artifacts:
+        paths:
+            - dist/
 
 deploy:
-  stage: deploy
-  only:
-  - master
-  script:
-  - cp CNAME dist/
-  - node_modules/.bin/surge dist
+    stage: deploy
+    only:
+        - master
+    script:
+        - cp CNAME dist/
+        - node_modules/.bin/surge dist
